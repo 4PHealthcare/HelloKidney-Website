@@ -1,54 +1,90 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
   const location = useLocation();
 
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'For Healthcare Providers', path: '/providers' },
-    { name: 'For Programs & Governments', path: '/programs' },
+  const navItems = [
+    {
+      name: 'Solutions',
+      dropdown: [
+        { name: 'For Healthcare Providers', path: '/providers' },
+        { name: 'For Programs & Governments', path: '/programs' }
+      ]
+    },
     { name: 'How It Works', path: '/how-it-works' },
     { name: 'About', path: '/about' },
-    { name: 'FAQ', path: '/faq' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'FAQ', path: '/faq' }
   ];
 
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center">
             <div className="text-2xl font-bold text-[#FA2931]">HelloKidney.ai</div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  isActive(link.path)
-                    ? 'text-[#FA2931] bg-red-50'
-                    : 'text-gray-700 hover:text-[#FA2931] hover:bg-gray-50'
-                }`}
-              >
-                {link.name}
-              </Link>
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navItems.map((item, index) => (
+              item.dropdown ? (
+                <div
+                  key={index}
+                  className="relative"
+                  onMouseEnter={() => setOpenDropdown(index)}
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
+                  <button className="flex items-center space-x-1 text-gray-700 hover:text-[#0E1833] font-medium transition-colors py-2">
+                    <span>{item.name}</span>
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                  {openDropdown === index && (
+                    <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                      {item.dropdown.map((subItem) => (
+                        <Link
+                          key={subItem.path}
+                          to={subItem.path}
+                          className={`block px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${
+                            isActive(subItem.path) ? 'text-[#FA2931] font-medium' : 'text-gray-700'
+                          }`}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-gray-700 hover:text-[#0E1833] font-medium transition-colors ${
+                    isActive(item.path) ? 'text-[#FA2931]' : ''
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </nav>
 
-          {/* CTA Button - Desktop */}
-          <div className="hidden lg:block">
+          {/* CTA Buttons - Desktop */}
+          <div className="hidden lg:flex items-center space-x-4">
             <Link to="/contact">
-              <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white font-medium transition-all duration-200">
+              <Button variant="ghost" className="text-gray-700 hover:text-[#0E1833] font-medium">
+                Talk to Sales
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold px-6 rounded-lg shadow-sm">
                 Request a Demo
               </Button>
             </Link>
@@ -69,27 +105,54 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-100">
-            <nav className="flex flex-col space-y-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
-                    isActive(link.path)
-                      ? 'text-[#FA2931] bg-red-50'
-                      : 'text-gray-700 hover:text-[#FA2931] hover:bg-gray-50'
-                  }`}
-                >
-                  {link.name}
-                </Link>
+          <div className="lg:hidden py-4 border-t border-gray-200">
+            <nav className="flex flex-col space-y-1">
+              {navItems.map((item, index) => (
+                item.dropdown ? (
+                  <div key={index}>
+                    <div className="px-4 py-2 text-sm font-semibold text-gray-900">{item.name}</div>
+                    {item.dropdown.map((subItem) => (
+                      <Link
+                        key={subItem.path}
+                        to={subItem.path}
+                        onClick={() => setIsMenuOpen(false)}
+                        className={`block pl-8 pr-4 py-2 text-sm transition-colors ${
+                          isActive(subItem.path)
+                            ? 'text-[#FA2931] font-medium'
+                            : 'text-gray-600 hover:text-[#FA2931]'
+                        }`}
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`px-4 py-2 text-sm transition-colors ${
+                      isActive(item.path)
+                        ? 'text-[#FA2931] font-medium'
+                        : 'text-gray-700 hover:text-[#FA2931]'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
-              <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                <Button className="w-full bg-[#FA2931] hover:bg-[#d91f27] text-white font-medium mt-4">
-                  Request a Demo
-                </Button>
-              </Link>
+              <div className="pt-4 px-4 space-y-2">
+                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <Button variant="outline" className="w-full border-gray-300 text-gray-700">
+                    Talk to Sales
+                  </Button>
+                </Link>
+                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold">
+                    Request a Demo
+                  </Button>
+                </Link>
+              </div>
             </nav>
           </div>
         )}
