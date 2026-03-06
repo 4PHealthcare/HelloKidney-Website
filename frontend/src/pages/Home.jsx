@@ -401,20 +401,28 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Ready to try HelloKidney? Section */}
-      <section className="relative py-32 overflow-hidden">
-        {/* Gradient Background with Organic Shapes */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/5 via-white to-[#0E1833]/5"></div>
-        
-        {/* Decorative Blobs */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-[#FA2931]/20 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#0E1833]/20 to-transparent rounded-full blur-3xl"></div>
+      {/* Ready to try HelloKidney? Section - Scribe-inspired animated background */}
+      <section className="relative py-32 overflow-hidden bg-white">
+        {/* Animated Organic Background - Scribe style */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Large organic blob 1 */}
+          <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-gradient-to-br from-[#FFE5E7] via-[#FFD6D9] to-[#FFC7CB] rounded-full blur-3xl opacity-60 animate-blob-1"></div>
+          
+          {/* Large organic blob 2 */}
+          <div className="absolute bottom-[-15%] left-[-10%] w-[700px] h-[700px] bg-gradient-to-tr from-[#E8F0FF] via-[#D6E4FF] to-[#C4D8FF] rounded-full blur-3xl opacity-50 animate-blob-2"></div>
+          
+          {/* Medium blob 3 */}
+          <div className="absolute top-[20%] left-[10%] w-[400px] h-[400px] bg-gradient-to-br from-[#F5E8FF] to-[#E8D4FF] rounded-full blur-2xl opacity-40 animate-blob-3"></div>
+          
+          {/* Small accent blob */}
+          <div className="absolute bottom-[30%] right-[15%] w-[300px] h-[300px] bg-gradient-to-tl from-[#FFE5E7] to-transparent rounded-full blur-2xl opacity-30 animate-pulse"></div>
+        </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-5xl sm:text-6xl font-bold text-[#0E1833] mb-6 leading-tight">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#0E1833] mb-6 leading-tight">
             Ready to try HelloKidney?
           </h2>
-          <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
             HelloKidney.ai automatically captures and streamlines kidney screening workflows. Screen smarter and faster. Turn screening processes into standardized playbooks in seconds.
           </p>
           
