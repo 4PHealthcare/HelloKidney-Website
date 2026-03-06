@@ -401,6 +401,66 @@ export const Home = () => {
         </div>
       </section>
 
+      {/* Ready to try HelloKidney? Section */}
+      <section className="relative py-32 overflow-hidden">
+        {/* Gradient Background with Organic Shapes */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/5 via-white to-[#0E1833]/5"></div>
+        
+        {/* Decorative Blobs */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-[#FA2931]/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#0E1833]/20 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-5xl sm:text-6xl font-bold text-[#0E1833] mb-6 leading-tight">
+            Ready to try HelloKidney?
+          </h2>
+          <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+            HelloKidney.ai automatically captures and streamlines kidney screening workflows. Screen smarter and faster. Turn screening processes into standardized playbooks in seconds.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <Link to="/contact">
+              <Button className="bg-gradient-to-r from-[#FA2931] to-[#d91f27] hover:from-[#d91f27] hover:to-[#c01822] text-white text-lg px-12 py-7 font-bold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-200">
+                Request a Demo
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button variant="outline" className="border-2 border-[#0E1833] text-[#0E1833] hover:bg-[#0E1833] hover:text-white text-lg px-12 py-7 font-semibold rounded-xl transition-all duration-200">
+                Talk to Sales →
+              </Button>
+            </Link>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="flex flex-wrap justify-center items-center gap-8 pt-8 border-t border-gray-200">
+            <div className="flex items-center space-x-2 text-gray-600">
+              <svg className="w-5 h-5 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg className="w-5 h-5 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg className="w-5 h-5 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg className="w-5 h-5 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg className="w-5 h-5 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span className="ml-2 font-semibold">Rated 5/5</span>
+            </div>
+            <div className="text-gray-600 font-semibold">
+              Trusted by <span className="text-[#FA2931]">10+</span> countries
+            </div>
+            <div className="text-gray-600 font-semibold">
+              <span className="text-[#FA2931]">50,000+</span> screenings conducted
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
