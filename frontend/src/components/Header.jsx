@@ -24,12 +24,16 @@ export const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="text-2xl font-bold text-[#FA2931]">HelloKidney.ai</div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/ju8d0ytr_logo_hk.png" 
+              alt="HelloKidney.ai" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -42,7 +46,7 @@ export const Header = () => {
                   onMouseEnter={() => setOpenDropdown(index)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <button className="flex items-center space-x-1 text-gray-700 hover:text-[#0E1833] font-medium transition-colors py-2">
+                  <button className="flex items-center space-x-1 text-white hover:text-[#FA2931] font-medium transition-colors py-2">
                     <span>{item.name}</span>
                     <ChevronDown className="h-4 w-4" />
                   </button>
@@ -66,7 +70,7 @@ export const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-gray-700 hover:text-[#0E1833] font-medium transition-colors ${
+                  className={`text-white hover:text-[#FA2931] font-medium transition-colors ${
                     isActive(item.path) ? 'text-[#FA2931]' : ''
                   }`}
                 >
@@ -79,7 +83,7 @@ export const Header = () => {
           {/* CTA Buttons - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link to="/contact">
-              <Button variant="ghost" className="text-gray-700 hover:text-[#0E1833] font-medium">
+              <Button variant="ghost" className="text-white hover:text-[#FA2931] hover:bg-white/10 font-medium">
                 Talk to Sales
               </Button>
             </Link>
@@ -93,24 +97,24 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-700" />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className="h-6 w-6 text-gray-700" />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-200">
+          <div className="lg:hidden py-4 border-t border-white/10 bg-[#0E1833]/95 backdrop-blur-lg rounded-b-lg">
             <nav className="flex flex-col space-y-1">
               {navItems.map((item, index) => (
                 item.dropdown ? (
                   <div key={index}>
-                    <div className="px-4 py-2 text-sm font-semibold text-gray-900">{item.name}</div>
+                    <div className="px-4 py-2 text-sm font-semibold text-white">{item.name}</div>
                     {item.dropdown.map((subItem) => (
                       <Link
                         key={subItem.path}
@@ -119,7 +123,7 @@ export const Header = () => {
                         className={`block pl-8 pr-4 py-2 text-sm transition-colors ${
                           isActive(subItem.path)
                             ? 'text-[#FA2931] font-medium'
-                            : 'text-gray-600 hover:text-[#FA2931]'
+                            : 'text-gray-300 hover:text-white'
                         }`}
                       >
                         {subItem.name}
@@ -134,7 +138,7 @@ export const Header = () => {
                     className={`px-4 py-2 text-sm transition-colors ${
                       isActive(item.path)
                         ? 'text-[#FA2931] font-medium'
-                        : 'text-gray-700 hover:text-[#FA2931]'
+                        : 'text-gray-300 hover:text-white'
                     }`}
                   >
                     {item.name}
@@ -143,7 +147,7 @@ export const Header = () => {
               ))}
               <div className="pt-4 px-4 space-y-2">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                  <Button variant="outline" className="w-full border-gray-300 text-gray-700">
+                  <Button variant="outline" className="w-full border-white/30 text-white hover:bg-white/10">
                     Talk to Sales
                   </Button>
                 </Link>
