@@ -45,19 +45,8 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-[#030616] text-white overflow-hidden">
-      {/* Top Gradient Background - blends from Enterprise section */}
-      <div 
-        className="absolute top-0 left-0 right-0 h-80 opacity-30"
-        style={{
-          backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/lcl3tjjs_6985efd2f97600ced801109e_long%20transition.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center bottom',
-          transform: 'rotate(180deg)'
-        }}
-      ></div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-16">
+    <footer className="bg-[#030616] text-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           {/* Logo and Description */}
