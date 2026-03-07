@@ -4,7 +4,6 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Label } from '../components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
-import { mockContactSubmission } from '../utils/mock';
 import { toast } from 'sonner';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -39,9 +38,19 @@ export const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await mockContactSubmission(formData);
-      if (response.success) {
-        toast.success(response.message);
+      const API_URL = process.env.REACT_APP_BACKEND_URL;
+      const response = await fetch(`${API_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok && data.success) {
+        toast.success(data.message);
         setFormData({
           name: '',
           organisation: '',
@@ -50,6 +59,8 @@ export const Contact = () => {
           country: '',
           message: ''
         });
+      } else {
+        toast.error(data.detail || 'Something went wrong. Please try again.');
       }
     } catch (error) {
       toast.error('Something went wrong. Please try again.');
@@ -61,7 +72,7 @@ export const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-32 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
+      <section className="py-32 pt-40 -mt-20 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Contact Us

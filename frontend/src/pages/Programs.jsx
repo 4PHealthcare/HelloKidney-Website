@@ -39,7 +39,7 @@ export const Programs = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative py-32 bg-cover bg-center"
+        className="relative py-32 pt-40 -mt-20 bg-cover bg-center"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1599666882726-fe28581e3147')`,
         }}

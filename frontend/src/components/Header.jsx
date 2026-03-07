@@ -40,17 +40,20 @@ export const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white shadow-md border-b border-gray-200' 
-        : 'bg-transparent border-b border-white/10'
+        ? 'bg-white shadow-md' 
+        : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
+          {/* Logo - switches between white and colored versions */}
           <Link to="/" className="flex items-center">
             <img 
-              src="https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/bsr81dag_logo_color.png" 
+              src={isScrolled 
+                ? "https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/bsr81dag_logo_color.png"
+                : "https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/bsr81dag_logo_color.png"
+              }
               alt="HelloKidney.ai" 
-              className="h-8 w-auto"
+              className={`h-8 w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
             />
           </Link>
 

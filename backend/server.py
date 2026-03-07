@@ -37,6 +37,27 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# Contact Form Models
+class ContactSubmission(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    organisation: str
+    role: str
+    email: str
+    country: str
+    message: str
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+class ContactSubmissionCreate(BaseModel):
+    name: str
+    organisation: str
+    role: str
+    email: str
+    country: str
+    message: str
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
@@ -65,6 +86,37 @@ async def get_status_checks():
             check['timestamp'] = datetime.fromisoformat(check['timestamp'])
     
     return status_checks
+
+@api_router.post("/contact")
+async def submit_contact_form(input: ContactSubmissionCreate):
+    """Submit a contact form inquiry"""
+    contact_obj = ContactSubmission(**input.model_dump())
+    
+    # Convert to dict and serialize datetime to ISO string for MongoDB
+    doc = contact_obj.model_dump()
+    doc['timestamp'] = doc['timestamp'].isoformat()
+    
+    _ = await db.contact_submissions.insert_one(doc)
+    
+    logger.info(f"New contact submission from {input.name} ({input.email})")
+    
+    return {
+        "success": True,
+        "message": "Thank you for your interest! We will contact you shortly.",
+        "id": contact_obj.id
+    }
+
+@api_router.get("/contact", response_model=List[ContactSubmission])
+async def get_contact_submissions():
+    """Get all contact form submissions (admin endpoint)"""
+    submissions = await db.contact_submissions.find({}, {"_id": 0}).to_list(1000)
+    
+    # Convert ISO string timestamps back to datetime objects
+    for submission in submissions:
+        if isinstance(submission['timestamp'], str):
+            submission['timestamp'] = datetime.fromisoformat(submission['timestamp'])
+    
+    return submissions
 
 # Include the router in the main app
 app.include_router(api_router)

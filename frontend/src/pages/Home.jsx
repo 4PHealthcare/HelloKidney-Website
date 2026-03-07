@@ -107,8 +107,8 @@ export const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Gradient Background */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+      {/* Hero Section with Gradient Background - extends under header */}
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden -mt-20">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -119,7 +119,7 @@ export const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-[#0E1833]/40 via-transparent to-[#0E1833]/30"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full py-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-20 pb-20">
           <div className="text-center max-w-4xl mx-auto">
             {/* Social Proof Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
