@@ -134,10 +134,13 @@ export const Home = () => {
             </div>
 
             {/* Animated Headline */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Early CKD Detection
+            <h1 
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+              style={{ textShadow: '0 4px 20px rgba(0, 0, 0, 0.3)' }}
+            >
+              Detect Kidney Disease
               <br />
-              <span className="text-[#FA2931]">Made Simple</span>
+              <span className="text-[#FA2931]" style={{ textShadow: '0 4px 20px rgba(250, 41, 49, 0.4)' }}>at the point-of-care</span>
             </h1>
 
             <p className="text-xl sm:text-2xl text-gray-200 mb-4 font-medium leading-relaxed">
