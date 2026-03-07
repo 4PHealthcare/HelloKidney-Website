@@ -354,24 +354,44 @@ export const Home = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-10 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <div className="w-16 h-16 bg-[#FA2931]/20 rounded-xl flex items-center justify-center mb-6">
-                <Shield className="h-8 w-8 text-[#FA2931]" />
+            <div 
+              className="relative p-10 rounded-2xl hover:bg-white/15 transition-all duration-300 border border-white/20 overflow-hidden"
+              style={{
+                backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/hsjj61qt_Enterprise-grade%20security.png')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              <div className="absolute inset-0 bg-[#030616]/60 backdrop-blur-sm"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-[#FA2931]/20 rounded-xl flex items-center justify-center mb-6">
+                  <Shield className="h-8 w-8 text-[#FA2931]" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Enterprise-grade security</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Meet your organization's security requirements with built-in data protection and access controls.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Enterprise-grade security</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Meet your organization's security requirements with built-in data protection and access controls.
-              </p>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm p-10 rounded-2xl border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <div className="w-16 h-16 bg-[#FA2931]/20 rounded-xl flex items-center justify-center mb-6">
-                <FileCheck className="h-8 w-8 text-[#FA2931]" />
+            <div 
+              className="relative p-10 rounded-2xl hover:bg-white/15 transition-all duration-300 border border-white/20 overflow-hidden"
+              style={{
+                backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/iwuz8psj_Stay%20compliant.png')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              <div className="absolute inset-0 bg-[#030616]/60 backdrop-blur-sm"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-[#FA2931]/20 rounded-xl flex items-center justify-center mb-6">
+                  <FileCheck className="h-8 w-8 text-[#FA2931]" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Stay compliant</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  HelloKidney meets HIPAA, GDPR, and other rigorous healthcare industry standards.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Stay compliant</h3>
-              <p className="text-gray-300 leading-relaxed">
-                HelloKidney meets HIPAA, GDPR, and other rigorous healthcare industry standards.
-              </p>
             </div>
           </div>
 
