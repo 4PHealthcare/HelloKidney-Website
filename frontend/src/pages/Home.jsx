@@ -436,30 +436,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
-        <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Partner with HelloKidney.ai to bring early CKD screening to your patients and communities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
-              <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white text-lg px-10 py-7 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
-                Request a Demo
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0E1833] text-lg px-10 py-7 font-semibold rounded-xl transition-all duration-200">
-                Talk to Sales →
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
