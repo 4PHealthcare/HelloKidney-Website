@@ -170,7 +170,7 @@ export const Home = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">The CKD Screening Platform</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-6">
+            <h2 className="text-[2.5rem] font-bold text-[#0E1833] mb-6">
               Capture and optimize screening workflows
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -203,7 +203,7 @@ export const Home = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">Impact</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-4">
+            <h2 className="text-[2.5rem] font-bold text-[#0E1833] mb-4">
               Real results. Really fast.
             </h2>
           </div>
@@ -264,7 +264,7 @@ export const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-bold text-white uppercase tracking-wide mb-3">Use Cases</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h2 className="text-[2.5rem] font-bold text-white mb-6">
               Built for every team. For any workflow.
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
@@ -323,7 +323,7 @@ export const Home = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">Enterprise Ready</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h2 className="text-[2.5rem] font-bold text-white mb-6">
               The standard for centralizing screening
             </h2>
             <Link to="/contact">
@@ -413,7 +413,7 @@ export const Home = () => {
             }}
           >
             <div className="relative z-10 text-center">
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-[2.5rem] font-bold text-white mb-6 leading-tight">
                 Ready to try HelloKidney?
               </h2>
               <p className="text-xl sm:text-2xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
