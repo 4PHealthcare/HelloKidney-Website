@@ -249,15 +249,25 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Use Cases Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      {/* Use Cases Section - Colorful gradient background */}
+      <section className="relative py-24 overflow-hidden">
+        {/* Gradient Background Image */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/vnxrgftq_6985efd2f97600ced801109e_long%20transition.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">Use Cases</p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-6">
+            <p className="text-sm font-bold text-white uppercase tracking-wide mb-3">Use Cases</p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
               Built for every team. For any workflow.
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Turn screening processes into playbooks to train colleagues, assist patients, and drive early detection.
             </p>
           </div>
@@ -267,7 +277,7 @@ export const Home = () => {
               <Link
                 key={index}
                 to="/contact"
-                className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                className="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-white/20"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img 
@@ -275,7 +285,7 @@ export const Home = () => {
                     alt={useCase.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0E1833]/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#030616]/80 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
                     <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg">
                       {useCase.icon}
@@ -283,11 +293,11 @@ export const Home = () => {
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="text-xl font-bold text-[#0E1833] mb-3 group-hover:text-[#FA2931] transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FA2931] transition-colors">
                     {useCase.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">{useCase.description}</p>
-                  <div className="mt-4 flex items-center text-[#FA2931] font-semibold text-sm">
+                  <p className="text-white/80 leading-relaxed">{useCase.description}</p>
+                  <div className="mt-4 flex items-center text-white font-semibold text-sm">
                     Learn more 
                     <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -300,7 +310,7 @@ export const Home = () => {
 
           <div className="text-center mt-12">
             <Link to="/contact">
-              <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white text-lg px-10 py-6 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
+              <Button className="bg-white hover:bg-gray-100 text-[#030616] text-lg px-10 py-6 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
                 Try HelloKidney Free
               </Button>
             </Link>
@@ -309,7 +319,7 @@ export const Home = () => {
       </section>
 
       {/* Enterprise Ready Section */}
-      <section className="py-24 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
+      <section className="py-24 bg-[#030616]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">Enterprise Ready</p>
