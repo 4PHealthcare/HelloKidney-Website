@@ -107,16 +107,16 @@ export const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Dark Background */}
+      {/* Hero Section with Gradient Background */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1771015138120-319470ad8f04')`,
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/6a03ms4t_background_image.png')`,
           }}
         >
-          <div className="absolute inset-0 bg-[#0E1833]/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0E1833]/40 via-transparent to-[#0E1833]/30"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full py-20">
