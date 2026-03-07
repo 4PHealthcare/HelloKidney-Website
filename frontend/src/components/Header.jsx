@@ -109,17 +109,8 @@ export const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Buttons - Desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/contact">
-              <Button variant="ghost" className={`font-medium transition-colors ${
-                isScrolled 
-                  ? 'text-gray-700 hover:text-[#FA2931] hover:bg-gray-100' 
-                  : 'text-white hover:text-[#FA2931] hover:bg-white/10'
-              }`}>
-                Talk to Sales
-              </Button>
-            </Link>
+          {/* CTA Button - Desktop */}
+          <div className="hidden lg:flex items-center">
             <Link to="/contact">
               <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold px-6 rounded-lg shadow-sm">
                 Request a Demo
@@ -178,12 +169,7 @@ export const Header = () => {
                   </Link>
                 )
               ))}
-              <div className="pt-4 px-4 space-y-2">
-                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                  <Button variant="outline" className="w-full border-gray-300 text-gray-700">
-                    Talk to Sales
-                  </Button>
-                </Link>
+              <div className="pt-4 px-4">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold">
                     Request a Demo

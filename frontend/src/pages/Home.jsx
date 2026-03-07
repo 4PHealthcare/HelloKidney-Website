@@ -152,7 +152,7 @@ export const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/contact">
                 <button 
-                  className="relative px-10 py-5 text-lg font-semibold text-white rounded-2xl transition-all duration-300 hover:scale-105"
+                  className="relative px-10 py-5 text-lg font-semibold text-white rounded-full transition-all duration-300 hover:scale-105"
                   style={{
                     background: 'rgba(255, 255, 255, 0.15)',
                     backdropFilter: 'blur(20px)',
@@ -166,7 +166,7 @@ export const Home = () => {
               </Link>
               <Link to="/how-it-works">
                 <button 
-                  className="relative px-10 py-5 text-lg font-semibold text-white rounded-2xl transition-all duration-300 hover:scale-105"
+                  className="relative px-10 py-5 text-lg font-semibold text-white rounded-full transition-all duration-300 hover:scale-105"
                   style={{
                     background: 'rgba(255, 255, 255, 0.1)',
                     backdropFilter: 'blur(20px)',
