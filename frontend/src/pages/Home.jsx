@@ -145,12 +145,8 @@ export const Home = () => {
               <span className="text-[#FA2931]" style={{ textShadow: 'none' }}>at the point-of-care</span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-200 mb-4 font-medium leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-200 mb-10 font-medium leading-relaxed">
               Smartphone urine ACR and eGFR workflows to detect kidney disease before it's too late.
-            </p>
-            
-            <p className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto">
-              Chronic kidney disease is often silent until it's advanced. HelloKidney helps healthcare teams screen high‑risk people early at clinics or from home.
             </p>
 
             {/* CTA Buttons */}
