@@ -337,16 +337,13 @@ export const Home = () => {
             {/* Card 1 - Redact sensitive data */}
             <div className="flex flex-col">
               <div 
-                className="relative h-64 rounded-2xl overflow-hidden mb-6 border border-white/20"
+                className="relative h-80 rounded-2xl overflow-hidden mb-6 border border-white/20"
                 style={{
                   backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/qobk093x_prv1.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               ></div>
-              <div className="w-16 h-16 bg-[#FA2931]/20 rounded-xl flex items-center justify-center mb-4">
-                <Lock className="h-8 w-8 text-[#FA2931]" />
-              </div>
               <h3 className="text-2xl font-bold text-white mb-4">Redact sensitive data</h3>
               <p className="text-gray-300 leading-relaxed">
                 Document key screening processes without worrying about exposing sensitive patient information.
@@ -356,16 +353,13 @@ export const Home = () => {
             {/* Card 2 - Enterprise-grade security */}
             <div className="flex flex-col">
               <div 
-                className="relative h-64 rounded-2xl overflow-hidden mb-6 border border-white/20"
+                className="relative h-80 rounded-2xl overflow-hidden mb-6 border border-white/20"
                 style={{
                   backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/hsjj61qt_Enterprise-grade%20security.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               ></div>
-              <div className="w-16 h-16 bg-[#FA2931]/20 rounded-xl flex items-center justify-center mb-4">
-                <Shield className="h-8 w-8 text-[#FA2931]" />
-              </div>
               <h3 className="text-2xl font-bold text-white mb-4">Enterprise-grade security</h3>
               <p className="text-gray-300 leading-relaxed">
                 Meet your organization's security requirements with built-in data protection and access controls.
@@ -375,16 +369,13 @@ export const Home = () => {
             {/* Card 3 - Stay compliant */}
             <div className="flex flex-col">
               <div 
-                className="relative h-64 rounded-2xl overflow-hidden mb-6 border border-white/20"
+                className="relative h-80 rounded-2xl overflow-hidden mb-6 border border-white/20"
                 style={{
                   backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/iwuz8psj_Stay%20compliant.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               ></div>
-              <div className="w-16 h-16 bg-[#FA2931]/20 rounded-xl flex items-center justify-center mb-4">
-                <FileCheck className="h-8 w-8 text-[#FA2931]" />
-              </div>
               <h3 className="text-2xl font-bold text-white mb-4">Stay compliant</h3>
               <p className="text-gray-300 leading-relaxed">
                 HelloKidney meets HIPAA, GDPR, and other rigorous healthcare industry standards.
