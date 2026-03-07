@@ -184,6 +184,8 @@ export const Home = () => {
                 </button>
               </Link>
             </div>
+            {/* Bottom padding */}
+            <div className="pb-[100px]"></div>
           </div>
         </div>
       </section>
