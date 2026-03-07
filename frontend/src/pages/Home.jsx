@@ -319,8 +319,18 @@ export const Home = () => {
       </section>
 
       {/* Enterprise Ready Section */}
-      <section className="py-24 bg-[#030616]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative py-24 bg-[#122049] overflow-hidden">
+        {/* Top Background Image */}
+        <div 
+          className="absolute top-0 left-0 right-0 h-64 opacity-40"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/841l0yfq_6985efd2f97600ced801109e_long%20transition.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center top'
+          }}
+        ></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">Enterprise Ready</p>
             <h2 className="text-[2.5rem] font-bold text-white mb-6">
