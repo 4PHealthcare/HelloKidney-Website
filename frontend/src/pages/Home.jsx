@@ -122,15 +122,17 @@ export const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-20 pb-20">
           <div className="text-center max-w-4xl mx-auto">
             {/* Social Proof Badge */}
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
-              <div className="flex items-center">
-                <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+            <div className="pt-[100px]">
+              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+                <div className="flex items-center">
+                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                </div>
+                <span className="text-sm text-white font-medium">Trusted by healthcare providers in 10+ countries</span>
               </div>
-              <span className="text-sm text-white font-medium">Trusted by healthcare providers in 10+ countries</span>
             </div>
 
             {/* Animated Headline */}
@@ -140,7 +142,7 @@ export const Home = () => {
             >
               Detect Kidney Disease
               <br />
-              <span className="text-[#FA2931]" style={{ textShadow: '0 4px 20px rgba(250, 41, 49, 0.4)' }}>at the point-of-care</span>
+              <span className="text-[#FA2931]" style={{ textShadow: 'none' }}>at the point-of-care</span>
             </h1>
 
             <p className="text-xl sm:text-2xl text-gray-200 mb-4 font-medium leading-relaxed">
