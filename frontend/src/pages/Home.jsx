@@ -409,7 +409,7 @@ export const Home = () => {
 
       {/* Ready to try HelloKidney? Section - Dark background with content card */}
       <section className="relative pt-32 pb-32 overflow-hidden bg-[#030616]">
-        <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           {/* Content Card with Purple/Blue Gradient Background */}
           <div 
             className="relative rounded-3xl overflow-hidden p-12 lg:p-20"
