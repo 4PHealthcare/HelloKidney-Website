@@ -131,7 +131,7 @@ export const Home = () => {
                   <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
                   <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
                 </div>
-                <span className="text-sm text-white font-medium">Trusted by healthcare providers in 10+ countries</span>
+                <span className="text-sm text-white font-medium">Trusted by healthcare partners</span>
               </div>
             </div>
 
