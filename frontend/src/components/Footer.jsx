@@ -45,7 +45,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-[#0E1833] via-[#1a2847] to-[#0E1833] text-white">
+    <footer className="bg-[#030616] text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
