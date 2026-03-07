@@ -151,14 +151,32 @@ export const Home = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/contact">
-                <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white text-lg px-10 py-7 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
+                <button 
+                  className="relative px-10 py-5 text-lg font-semibold text-white rounded-2xl transition-all duration-300 hover:scale-105"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.15)',
+                    backdropFilter: 'blur(20px)',
+                    WebkitBackdropFilter: 'blur(20px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
+                  }}
+                >
                   Request a Demo
-                </Button>
+                </button>
               </Link>
               <Link to="/how-it-works">
-                <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 text-lg px-10 py-7 font-semibold rounded-xl transition-all duration-200">
+                <button 
+                  className="relative px-10 py-5 text-lg font-semibold text-white rounded-2xl transition-all duration-300 hover:scale-105"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    backdropFilter: 'blur(20px)',
+                    WebkitBackdropFilter: 'blur(20px)',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15)'
+                  }}
+                >
                   How It Works
-                </Button>
+                </button>
               </Link>
             </div>
           </div>
