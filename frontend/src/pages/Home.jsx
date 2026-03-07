@@ -146,7 +146,7 @@ export const Home = () => {
             </h1>
 
             <p className="text-xl sm:text-2xl text-gray-200 mb-10 font-medium leading-relaxed">
-              Smartphone urine ACR and eGFR workflows to detect kidney disease before it's too late.
+              9 out of 10 people don't know they have kidney disease. HelloKidney finds them and tells you what to do about it.
             </p>
 
             {/* CTA Buttons */}
