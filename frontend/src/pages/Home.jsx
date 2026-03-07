@@ -309,14 +309,21 @@ export const Home = () => {
       </section>
 
       {/* Enterprise Ready Section */}
-      <section className="relative py-24 bg-[#030616] overflow-hidden">
-        {/* Top Gradient Transition Image - blends from white to dark */}
+      <section className="relative -mt-24 pt-72 pb-24 bg-[#030616] overflow-hidden">
+        {/* Top Gradient Transition Image - aurora effect blending into dark */}
         <div 
-          className="absolute top-0 left-0 right-0 h-80"
+          className="absolute -top-20 left-0 right-0 h-[600px]"
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.5) 20%, transparent 60%), url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/lcl3tjjs_6985efd2f97600ced801109e_long%20transition.png')`,
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/lcl3tjjs_6985efd2f97600ced801109e_long%20transition.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center top'
+          }}
+        ></div>
+        {/* Gradient overlay to blend image into dark background */}
+        <div 
+          className="absolute -top-20 left-0 right-0 h-[600px]"
+          style={{
+            background: 'linear-gradient(to bottom, transparent 0%, transparent 50%, #030616 100%)'
           }}
         ></div>
 
