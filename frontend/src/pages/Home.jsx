@@ -108,7 +108,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Gradient Background - extends under header */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden -mt-20">
+      <section className="relative h-screen flex items-center overflow-hidden -mt-20">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
