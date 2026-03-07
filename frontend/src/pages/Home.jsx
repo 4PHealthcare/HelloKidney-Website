@@ -148,25 +148,8 @@ export const Home = () => {
               Chronic kidney disease is often silent until it's advanced. HelloKidney helps healthcare teams screen high‑risk people early at clinics or from home.
             </p>
 
-            {/* Use Case Cards */}
-            <div className="mb-10">
-              <p className="text-sm text-gray-300 font-medium mb-4">How will your team use HelloKidney.ai?</p>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 max-w-5xl mx-auto">
-                {useCases.map((useCase, index) => (
-                  <Link
-                    key={index}
-                    to={useCase.path}
-                    className="flex flex-col items-center p-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl hover:border-[#FA2931] hover:bg-white/20 transition-all duration-200 group"
-                  >
-                    <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">{useCase.icon}</div>
-                    <p className="text-xs text-white font-medium text-center leading-tight">{useCase.title}</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/contact">
                 <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white text-lg px-10 py-7 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
                   Request a Demo
@@ -177,18 +160,6 @@ export const Home = () => {
                   How It Works
                 </Button>
               </Link>
-            </div>
-
-            {/* Trust Bar */}
-            <div className="border-t border-white/20 pt-8">
-              <p className="text-sm text-gray-300 mb-6 font-medium">Trusted by healthcare organizations across India, Kenya, and beyond</p>
-              <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
-                {trustLogos.map((logo, index) => (
-                  <div key={index} className="text-white font-semibold text-sm" style={{ width: logo.width }}>
-                    {logo.name}
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
