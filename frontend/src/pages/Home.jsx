@@ -314,7 +314,7 @@ export const Home = () => {
         <div 
           className="absolute top-0 left-0 right-0 h-80"
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.5) 20%, transparent 60%), url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/841l0yfq_6985efd2f97600ced801109e_long%20transition.png')`,
+            backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.5) 20%, transparent 60%), url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/lcl3tjjs_6985efd2f97600ced801109e_long%20transition.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center top'
           }}

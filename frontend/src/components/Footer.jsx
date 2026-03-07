@@ -45,8 +45,19 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#030616] text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+    <footer className="relative bg-[#030616] text-white overflow-hidden">
+      {/* Top Gradient Background - blends from Enterprise section */}
+      <div 
+        className="absolute top-0 left-0 right-0 h-80 opacity-30"
+        style={{
+          backgroundImage: `url('https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/lcl3tjjs_6985efd2f97600ced801109e_long%20transition.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center bottom',
+          transform: 'rotate(180deg)'
+        }}
+      ></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           {/* Logo and Description */}
@@ -94,7 +105,7 @@ export const Footer = () => {
             <p className="text-gray-400 text-sm">© 2026 HelloKidney.ai — All rights reserved.</p>
           </div>
 
-          {/* Social Media Links */}
+          {/* Social Media Links - Right Side */}
           <div className="flex items-center space-x-4">
             <a href="#" className="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors border border-white/10">
               <Linkedin className="h-5 w-5 text-gray-400 hover:text-white" />
@@ -105,16 +116,6 @@ export const Footer = () => {
             <a href="#" className="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors border border-white/10">
               <Facebook className="h-5 w-5 text-gray-400 hover:text-white" />
             </a>
-          </div>
-
-          {/* Compliance Badges */}
-          <div className="flex items-center space-x-3">
-            <div className="bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10">
-              <span className="text-xs text-gray-300 font-medium">SOC 2</span>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10">
-              <span className="text-xs text-gray-300 font-medium">HIPAA</span>
-            </div>
           </div>
         </div>
 
