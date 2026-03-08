@@ -678,39 +678,6 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* What HelloKidney.ai Does */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">The CKD Screening Platform</p>
-            <h2 className="text-[2.5rem] font-bold text-[#0E1833] mb-6">
-              Capture and optimize screening workflows
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              HelloKidney.ai combines smartphone‑based urine UACR testing with point‑of‑care creatinine/eGFR to bring early CKD screening closer to patients.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {capabilities.map((capability, index) => (
-              <div key={index} className="bg-white p-10 rounded-2xl hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <div className="mb-6">{capability.icon}</div>
-                <h3 className="text-2xl font-bold text-[#0E1833] mb-4">{capability.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{capability.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Link to="/how-it-works">
-              <Button variant="outline" className="border-2 border-[#FA2931] text-[#FA2931] hover:bg-[#FA2931] hover:text-white px-10 py-6 text-lg font-semibold rounded-xl transition-all duration-200">
-                See How It Works →
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Impact Section */}
       <section className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
