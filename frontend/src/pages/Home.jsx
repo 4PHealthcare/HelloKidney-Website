@@ -562,107 +562,81 @@ export const Home = () => {
             </div>
           </div>
 
-          {/* Bottom Row - 4 Cards */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {/* Bottom Row - 3 Cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {/* General Practitioners */}
-            <div className="group relative rounded-3xl overflow-hidden h-80 cursor-pointer">
+            <div className="group relative rounded-3xl overflow-hidden h-96 cursor-pointer">
               <img 
                 src="https://images.unsplash.com/photo-1666887360445-e3b7bba7917c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwyfHxnZW5lcmFsJTIwcHJhY3RpdGlvbmVyJTIwcHJpbWFyeSUyMGNhcmUlMjBkb2N0b3J8ZW58MHx8fHwxNzcyOTQ3NzUyfDA&ixlib=rb-4.1.0&q=85"
                 alt="General Practitioners"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="w-9 h-9 rounded-xl bg-blue-500 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-500 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-1">General Practitioners</h3>
-                <p className="text-gray-300 text-xs">Primary care providers for early CKD detection</p>
+                <h3 className="text-xl font-bold text-white mb-2">General Practitioners</h3>
+                <p className="text-gray-300 text-sm">Primary care providers for early CKD detection</p>
               </div>
-              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
 
             {/* Diabetologists */}
-            <div className="group relative rounded-3xl overflow-hidden h-80 cursor-pointer">
+            <div className="group relative rounded-3xl overflow-hidden h-96 cursor-pointer">
               <img 
                 src="https://images.unsplash.com/photo-1673865641073-4479f93a7776?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxkaWFiZXRlcyUyMGRvY3RvciUyMGVuZG9jcmlub2xvZ2lzdHxlbnwwfHx8fDE3NzI5NDc3NjF8MA&ixlib=rb-4.1.0&q=85"
                 alt="Diabetologists"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="w-9 h-9 rounded-xl bg-purple-500 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-purple-500 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-1">Diabetologists</h3>
-                <p className="text-gray-300 text-xs">Diabetes specialists monitoring kidney complications</p>
+                <h3 className="text-xl font-bold text-white mb-2">Diabetologists</h3>
+                <p className="text-gray-300 text-sm">Diabetes specialists monitoring kidney complications</p>
               </div>
-              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
 
             {/* Cardiologists */}
-            <div className="group relative rounded-3xl overflow-hidden h-80 cursor-pointer">
+            <div className="group relative rounded-3xl overflow-hidden h-96 cursor-pointer">
               <img 
                 src="https://images.unsplash.com/photo-1612943733919-f9661f1331f5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBzdGV0aG9zY29wZSUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3Mjk0Nzc2OHww&ixlib=rb-4.1.0&q=85"
                 alt="Cardiologists"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="w-9 h-9 rounded-xl bg-rose-500 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-rose-500 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-1">Cardiologists</h3>
-                <p className="text-gray-300 text-xs">Heart specialists managing cardiovascular-renal health</p>
+                <h3 className="text-xl font-bold text-white mb-2">Cardiologists</h3>
+                <p className="text-gray-300 text-sm">Heart specialists managing cardiovascular-renal health</p>
               </div>
-              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Other Healthcare Professionals */}
-            <div className="group relative rounded-3xl overflow-hidden h-80 cursor-pointer">
-              <img 
-                src="https://images.unsplash.com/photo-1755189118414-14c8dacdb082?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBzdGV0aG9zY29wZSUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3Mjk0Nzc2OHww&ixlib=rb-4.1.0&q=85"
-                alt="Other Healthcare Professionals"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="w-9 h-9 rounded-xl bg-teal-500 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <h3 className="text-lg font-bold text-white mb-1">Other Professionals</h3>
-                <p className="text-gray-300 text-xs">All professionals involved in CKD management</p>
-              </div>
-              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
