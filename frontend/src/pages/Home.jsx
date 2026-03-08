@@ -187,7 +187,7 @@ export const Home = () => {
       </section>
 
       {/* Why Early Kidney Screening Matters Section - Modern Bento Grid Design */}
-      <section className="relative py-28 bg-white overflow-hidden">
+      <section className="relative py-28 bg-[#f8fafc] overflow-hidden">
         {/* Animated gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#FA2931]/10 rounded-full blur-[100px] animate-pulse-slow"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#4f46e5]/10 rounded-full blur-[120px] animate-pulse-slow animation-delay-300"></div>
@@ -271,25 +271,25 @@ export const Home = () => {
 
             {/* Risk Factors Card */}
             <div className="col-span-12 sm:col-span-6 lg:col-span-4 group">
-              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-purple-500 to-purple-700 hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-500">
-                <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 hover:shadow-xl hover:shadow-purple-100 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-purple-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">Rising Risk Factors</h3>
+                <h3 className="text-xl font-bold text-[#0E1833] mb-4">Rising Risk Factors</h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-white/90">Diabetes</span>
+                    <div className="w-2 h-2 rounded-full bg-purple-500"></div>
+                    <span className="text-gray-700">Diabetes</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-white/90">Hypertension</span>
+                    <div className="w-2 h-2 rounded-full bg-purple-500"></div>
+                    <span className="text-gray-700">Hypertension</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 rounded-full bg-white"></div>
-                    <span className="text-white/90">Obesity</span>
+                    <div className="w-2 h-2 rounded-full bg-purple-500"></div>
+                    <span className="text-gray-700">Obesity</span>
                   </div>
                 </div>
               </div>
@@ -297,14 +297,14 @@ export const Home = () => {
 
             {/* Geography Card */}
             <div className="col-span-12 sm:col-span-6 lg:col-span-4 group">
-              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-blue-500 to-blue-700 hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-500">
-                <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 hover:shadow-xl hover:shadow-blue-100 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-blue-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Most Affected Regions</h3>
-                <p className="text-white/90 leading-relaxed">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-3">Most Affected Regions</h3>
+                <p className="text-gray-700 leading-relaxed">
                   India, Kenya & other LMICs face rapidly rising CKD rates due to lifestyle changes.
                 </p>
               </div>
@@ -312,14 +312,14 @@ export const Home = () => {
 
             {/* Cost Card */}
             <div className="col-span-12 sm:col-span-6 lg:col-span-4 group">
-              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-amber-500 to-orange-600 hover:shadow-2xl hover:shadow-amber-500/30 transition-all duration-500">
-                <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-amber-50 to-orange-100 border border-amber-200 hover:shadow-xl hover:shadow-amber-100 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-amber-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Late = Costly</h3>
-                <p className="text-white/90 leading-relaxed">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-3">Late = Costly</h3>
+                <p className="text-gray-700 leading-relaxed">
                   Late diagnosis means dialysis dependency, higher costs & preventable deaths.
                 </p>
               </div>
