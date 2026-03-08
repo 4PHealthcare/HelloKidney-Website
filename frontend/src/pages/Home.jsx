@@ -186,127 +186,171 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Why Early Kidney Screening Matters Section */}
-      <section className="relative py-24 bg-white overflow-hidden">
-        {/* Decorative background elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#FA2931]/5 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-[#0E1833]/5 to-transparent rounded-full blur-3xl"></div>
+      {/* Why Early Kidney Screening Matters Section - Modern Bento Grid Design */}
+      <section className="relative py-28 bg-[#030616] overflow-hidden">
+        {/* Animated gradient orbs */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#FA2931]/20 rounded-full blur-[100px] animate-pulse-slow"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#4f46e5]/20 rounded-full blur-[120px] animate-pulse-slow animation-delay-300"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#0E1833]/50 rounded-full blur-[150px]"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in-up">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#FA2931]/10 mb-6 animate-float">
-              <svg className="w-8 h-8 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-              </svg>
-            </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-6">
-              Why Early Kidney Screening <span className="text-[#FA2931]">Matters</span>
+          <div className="text-center mb-20 animate-fade-in-up">
+            <span className="inline-block px-4 py-2 rounded-full bg-[#FA2931]/10 text-[#FA2931] text-sm font-semibold mb-6 border border-[#FA2931]/20">
+              THE SILENT EPIDEMIC
+            </span>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Why Early Screening
+              <span className="block bg-gradient-to-r from-[#FA2931] via-[#ff6b6b] to-[#FA2931] bg-clip-text text-transparent">
+                Saves Lives
+              </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Chronic kidney disease (CKD) affects over <span className="font-semibold text-[#0E1833]">850 million people</span> worldwide, yet most cases go undetected until advanced stages.
-            </p>
           </div>
 
-          {/* Stats Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
-            <div className="group bg-gradient-to-br from-[#0E1833] to-[#1a2847] p-8 rounded-3xl text-white transform hover:scale-105 transition-all duration-500 animate-fade-in-up animation-delay-100">
-              <div className="text-5xl font-bold text-[#FA2931] mb-3">850M+</div>
-              <div className="text-lg font-medium text-gray-300">People affected by CKD globally</div>
-              <div className="mt-4 w-full h-1 bg-white/20 rounded-full overflow-hidden">
-                <div className="w-3/4 h-full bg-[#FA2931] rounded-full animate-pulse-slow"></div>
-              </div>
-            </div>
-            <div className="group bg-gradient-to-br from-[#0E1833] to-[#1a2847] p-8 rounded-3xl text-white transform hover:scale-105 transition-all duration-500 animate-fade-in-up animation-delay-200">
-              <div className="text-5xl font-bold text-[#FA2931] mb-3">90%</div>
-              <div className="text-lg font-medium text-gray-300">Of early CKD cases are undiagnosed</div>
-              <div className="mt-4 w-full h-1 bg-white/20 rounded-full overflow-hidden">
-                <div className="w-[90%] h-full bg-[#FA2931] rounded-full animate-pulse-slow"></div>
-              </div>
-            </div>
-            <div className="group bg-gradient-to-br from-[#0E1833] to-[#1a2847] p-8 rounded-3xl text-white transform hover:scale-105 transition-all duration-500 animate-fade-in-up animation-delay-300">
-              <div className="text-5xl font-bold text-[#FA2931] mb-3">Silent</div>
-              <div className="text-lg font-medium text-gray-300">Disease until advanced stages</div>
-              <div className="mt-4 w-full h-1 bg-white/20 rounded-full overflow-hidden">
-                <div className="w-full h-full bg-[#FA2931] rounded-full animate-pulse-slow"></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Key Points */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left - Visual */}
-            <div className="relative animate-fade-in-left">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/20 to-[#0E1833]/20 rounded-3xl blur-2xl transform rotate-3"></div>
-              <div className="relative bg-gradient-to-br from-[#0E1833] via-[#1a2847] to-[#0E1833] p-10 rounded-3xl">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4 text-white">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FA2931]/20 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                      </svg>
+          {/* Bento Grid Layout */}
+          <div className="grid grid-cols-12 gap-4 lg:gap-6">
+            {/* Large Feature Card - Stats */}
+            <div className="col-span-12 lg:col-span-8 group">
+              <div className="relative h-full p-8 lg:p-10 rounded-3xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-[#FA2931]/30 transition-all duration-500 overflow-hidden">
+                {/* Glow effect on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/0 to-[#FA2931]/0 group-hover:from-[#FA2931]/5 group-hover:to-transparent transition-all duration-500 rounded-3xl"></div>
+                
+                <div className="relative z-10">
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+                    <div className="flex-1">
+                      <div className="text-7xl lg:text-8xl font-bold bg-gradient-to-r from-[#FA2931] to-[#ff6b6b] bg-clip-text text-transparent mb-4">
+                        850M+
+                      </div>
+                      <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-3">People Affected Globally</h3>
+                      <p className="text-gray-400 text-lg leading-relaxed">
+                        Chronic kidney disease affects over 850 million people worldwide, yet most cases go undetected until advanced stages.
+                      </p>
                     </div>
-                    <span className="text-lg">Rising diabetes & hypertension rates</span>
-                  </div>
-                  <div className="flex items-center space-x-4 text-white">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FA2931]/20 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
-                      </svg>
+                    <div className="flex-shrink-0">
+                      <div className="relative w-40 h-40">
+                        {/* Animated ring */}
+                        <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                          <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="8"/>
+                          <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" strokeWidth="8" strokeLinecap="round" strokeDasharray="283" strokeDashoffset="28" className="animate-pulse-slow"/>
+                          <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                              <stop offset="0%" stopColor="#FA2931"/>
+                              <stop offset="100%" stopColor="#ff6b6b"/>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="text-3xl font-bold text-white">90%</span>
+                        </div>
+                      </div>
+                      <p className="text-center text-gray-400 mt-2 text-sm">Undiagnosed</p>
                     </div>
-                    <span className="text-lg">India, Kenya & LMICs most affected</span>
-                  </div>
-                  <div className="flex items-center space-x-4 text-white">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FA2931]/20 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="text-lg">Late diagnosis = preventable deaths</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right - Content Points */}
-            <div className="space-y-6">
-              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-200">
-                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
-                  1
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Diabetes, hypertension, and obesity</h4>
-                  <p className="text-gray-600">Rapidly rising in India, Kenya, and other low‑ and middle‑income countries — are the leading drivers of CKD.</p>
-                </div>
-              </div>
-              
-              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-300">
-                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
-                  2
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Early‑stage CKD is almost always silent</h4>
-                  <p className="text-gray-600">Patients feel fine while kidney damage quietly progresses without any symptoms.</p>
+            {/* Silent Disease Card */}
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4 group">
+              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-[#FA2931]/20 to-[#FA2931]/5 backdrop-blur-xl border border-[#FA2931]/20 hover:border-[#FA2931]/50 transition-all duration-500 overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#FA2931]/20 rounded-full blur-3xl"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 rounded-2xl bg-[#FA2931]/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-7 h-7 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-3">Silent Killer</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Early-stage CKD has no symptoms. Patients feel fine while kidney damage quietly progresses.
+                  </p>
                 </div>
               </div>
-              
-              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-400">
-                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
-                  3
+            </div>
+
+            {/* Risk Factors Card */}
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4 group">
+              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-purple-500/30 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Late diagnosis means higher costs</h4>
-                  <p className="text-gray-600">Dialysis dependency, and preventable deaths that burden healthcare systems.</p>
+                <h3 className="text-xl font-bold text-white mb-4">Rising Risk Factors</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 rounded-full bg-purple-400"></div>
+                    <span className="text-gray-300">Diabetes</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 rounded-full bg-purple-400"></div>
+                    <span className="text-gray-300">Hypertension</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 rounded-full bg-purple-400"></div>
+                    <span className="text-gray-300">Obesity</span>
+                  </div>
                 </div>
               </div>
-              
-              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-500">
-                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
-                  4
+            </div>
+
+            {/* Geography Card */}
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4 group">
+              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-blue-500/30 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+                  </svg>
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Simple screening tests can identify CKD early</h4>
-                  <p className="text-gray-600">But access remains limited in primary care settings where it's needed most.</p>
+                <h3 className="text-xl font-bold text-white mb-3">Most Affected Regions</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  India, Kenya & other LMICs face rapidly rising CKD rates due to lifestyle changes.
+                </p>
+              </div>
+            </div>
+
+            {/* Cost Card */}
+            <div className="col-span-12 sm:col-span-6 lg:col-span-4 group">
+              <div className="relative h-full p-8 rounded-3xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-amber-500/30 transition-all duration-500">
+                <div className="w-14 h-14 rounded-2xl bg-amber-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-7 h-7 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Late = Costly</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Late diagnosis means dialysis dependency, higher costs & preventable deaths.
+                </p>
+              </div>
+            </div>
+
+            {/* Solution Card - Full Width */}
+            <div className="col-span-12 group">
+              <div className="relative p-8 lg:p-10 rounded-3xl bg-gradient-to-r from-[#FA2931]/10 via-purple-500/10 to-blue-500/10 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-500 overflow-hidden">
+                {/* Animated line */}
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FA2931] to-transparent animate-pulse-slow"></div>
+                
+                <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+                  <div className="flex items-center space-x-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#FA2931] to-[#ff6b6b] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#FA2931]/30">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Simple Screening Tests Can Identify CKD Early</h3>
+                      <p className="text-gray-400 text-lg">But access remains limited in primary care settings where it's needed most.</p>
+                    </div>
+                  </div>
+                  <Link to="/how-it-works">
+                    <button className="flex items-center space-x-2 px-8 py-4 rounded-full bg-white text-[#030616] font-semibold hover:bg-gray-100 transition-all duration-300 group-hover:scale-105 shadow-xl">
+                      <span>See How We Help</span>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
