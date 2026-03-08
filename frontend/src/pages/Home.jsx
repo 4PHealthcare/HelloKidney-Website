@@ -186,6 +186,134 @@ export const Home = () => {
         </div>
       </section>
 
+      {/* Why Early Kidney Screening Matters Section */}
+      <section className="relative py-24 bg-white overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#FA2931]/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-[#0E1833]/5 to-transparent rounded-full blur-3xl"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#FA2931]/10 mb-6 animate-float">
+              <svg className="w-8 h-8 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-6">
+              Why Early Kidney Screening <span className="text-[#FA2931]">Matters</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Chronic kidney disease (CKD) affects over <span className="font-semibold text-[#0E1833]">850 million people</span> worldwide, yet most cases go undetected until advanced stages.
+            </p>
+          </div>
+
+          {/* Stats Cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="group bg-gradient-to-br from-[#0E1833] to-[#1a2847] p-8 rounded-3xl text-white transform hover:scale-105 transition-all duration-500 animate-fade-in-up animation-delay-100">
+              <div className="text-5xl font-bold text-[#FA2931] mb-3">850M+</div>
+              <div className="text-lg font-medium text-gray-300">People affected by CKD globally</div>
+              <div className="mt-4 w-full h-1 bg-white/20 rounded-full overflow-hidden">
+                <div className="w-3/4 h-full bg-[#FA2931] rounded-full animate-pulse-slow"></div>
+              </div>
+            </div>
+            <div className="group bg-gradient-to-br from-[#0E1833] to-[#1a2847] p-8 rounded-3xl text-white transform hover:scale-105 transition-all duration-500 animate-fade-in-up animation-delay-200">
+              <div className="text-5xl font-bold text-[#FA2931] mb-3">90%</div>
+              <div className="text-lg font-medium text-gray-300">Of early CKD cases are undiagnosed</div>
+              <div className="mt-4 w-full h-1 bg-white/20 rounded-full overflow-hidden">
+                <div className="w-[90%] h-full bg-[#FA2931] rounded-full animate-pulse-slow"></div>
+              </div>
+            </div>
+            <div className="group bg-gradient-to-br from-[#0E1833] to-[#1a2847] p-8 rounded-3xl text-white transform hover:scale-105 transition-all duration-500 animate-fade-in-up animation-delay-300">
+              <div className="text-5xl font-bold text-[#FA2931] mb-3">Silent</div>
+              <div className="text-lg font-medium text-gray-300">Disease until advanced stages</div>
+              <div className="mt-4 w-full h-1 bg-white/20 rounded-full overflow-hidden">
+                <div className="w-full h-full bg-[#FA2931] rounded-full animate-pulse-slow"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Points */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Visual */}
+            <div className="relative animate-fade-in-left">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/20 to-[#0E1833]/20 rounded-3xl blur-2xl transform rotate-3"></div>
+              <div className="relative bg-gradient-to-br from-[#0E1833] via-[#1a2847] to-[#0E1833] p-10 rounded-3xl">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 text-white">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FA2931]/20 flex items-center justify-center">
+                      <svg className="w-6 h-6 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    </div>
+                    <span className="text-lg">Rising diabetes & hypertension rates</span>
+                  </div>
+                  <div className="flex items-center space-x-4 text-white">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FA2931]/20 flex items-center justify-center">
+                      <svg className="w-6 h-6 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+                      </svg>
+                    </div>
+                    <span className="text-lg">India, Kenya & LMICs most affected</span>
+                  </div>
+                  <div className="flex items-center space-x-4 text-white">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#FA2931]/20 flex items-center justify-center">
+                      <svg className="w-6 h-6 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <span className="text-lg">Late diagnosis = preventable deaths</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Content Points */}
+            <div className="space-y-6">
+              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-200">
+                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
+                  1
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Diabetes, hypertension, and obesity</h4>
+                  <p className="text-gray-600">Rapidly rising in India, Kenya, and other low‑ and middle‑income countries — are the leading drivers of CKD.</p>
+                </div>
+              </div>
+              
+              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-300">
+                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
+                  2
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Early‑stage CKD is almost always silent</h4>
+                  <p className="text-gray-600">Patients feel fine while kidney damage quietly progresses without any symptoms.</p>
+                </div>
+              </div>
+              
+              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-400">
+                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
+                  3
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Late diagnosis means higher costs</h4>
+                  <p className="text-gray-600">Dialysis dependency, and preventable deaths that burden healthcare systems.</p>
+                </div>
+              </div>
+              
+              <div className="group flex items-start space-x-4 p-5 rounded-2xl hover:bg-gray-50 transition-all duration-300 animate-fade-in-up animation-delay-500">
+                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#FA2931] flex items-center justify-center text-white font-bold shadow-lg shadow-[#FA2931]/30 group-hover:scale-110 transition-transform">
+                  4
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-[#0E1833] mb-1">Simple screening tests can identify CKD early</h4>
+                  <p className="text-gray-600">But access remains limited in primary care settings where it's needed most.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What HelloKidney.ai Does */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
