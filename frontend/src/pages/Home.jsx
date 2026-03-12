@@ -374,7 +374,7 @@ export const Home = () => {
             <div className="group flex flex-col items-center">
               <div 
                 className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -384,7 +384,7 @@ export const Home = () => {
                 />
               </div>
               {/* Text Below Card */}
-              <div className="mt-6 text-center max-w-[260px]">
+              <div className="mt-6 text-center max-w-[290px]">
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">1. Register Patient</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Record basic demographics and risk profile (diabetes, hypertension, family history).
@@ -396,7 +396,7 @@ export const Home = () => {
             <div className="group flex flex-col items-center">
               <div 
                 className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -406,7 +406,7 @@ export const Home = () => {
                 />
               </div>
               {/* Text Below Card */}
-              <div className="mt-6 text-center max-w-[260px]">
+              <div className="mt-6 text-center max-w-[290px]">
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">2. Perform Tests</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Run a urine ACR test with Hellokidney UACR strips and an eGFR test with the creatinine meter.
@@ -418,7 +418,7 @@ export const Home = () => {
             <div className="group flex flex-col items-center">
               <div 
                 className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -428,7 +428,7 @@ export const Home = () => {
                 />
               </div>
               {/* Text Below Card */}
-              <div className="mt-6 text-center max-w-[260px]">
+              <div className="mt-6 text-center max-w-[290px]">
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">3. View Risk Category</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Receive a colour‑coded kidney risk classification with guidance for next steps.
@@ -440,7 +440,7 @@ export const Home = () => {
             <div className="group flex flex-col items-center">
               <div 
                 className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -450,7 +450,7 @@ export const Home = () => {
                 />
               </div>
               {/* Text Below Card */}
-              <div className="mt-6 text-center max-w-[260px]">
+              <div className="mt-6 text-center max-w-[290px]">
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">4. Track Follow‑Up</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Monitor follow‑up visits, repeat testing, and patient outcomes over time.
