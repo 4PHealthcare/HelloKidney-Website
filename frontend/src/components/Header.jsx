@@ -32,7 +32,7 @@ export const Header = () => {
     },
     { name: 'How It Works', path: '/how-it-works' },
     { name: 'About', path: '/about' },
-    { name: 'FAQ', path: '/faq' }
+    { name: 'Contact', path: '/contact' }
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -76,19 +76,23 @@ export const Header = () => {
                     <ChevronDown className="h-4 w-4" />
                   </button>
                   {openDropdown === index && (
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2">
-                      {item.dropdown.map((subItem) => (
-                        <Link
-                          key={subItem.path}
-                          to={subItem.path}
-                          className={`block px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${
-                            isActive(subItem.path) ? 'text-[#FA2931] font-medium' : 'text-gray-700'
-                          }`}
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
+                    <>
+                      {/* Invisible bridge to prevent gap */}
+                      <div className="absolute top-full left-0 w-full h-2"></div>
+                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                        {item.dropdown.map((subItem) => (
+                          <Link
+                            key={subItem.path}
+                            to={subItem.path}
+                            className={`block px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${
+                              isActive(subItem.path) ? 'text-[#FA2931] font-medium' : 'text-gray-700'
+                            }`}
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </>
                   )}
                 </div>
               ) : (
@@ -96,11 +100,9 @@ export const Header = () => {
                   key={item.path}
                   to={item.path}
                   className={`font-medium transition-colors ${
-                    isActive(item.path) 
-                      ? 'text-[#FA2931]' 
-                      : isScrolled 
-                        ? 'text-gray-700 hover:text-[#FA2931]' 
-                        : 'text-white hover:text-[#FA2931]'
+                    isScrolled 
+                      ? 'text-gray-700 hover:text-[#FA2931]' 
+                      : 'text-white hover:text-[#FA2931]'
                   }`}
                 >
                   {item.name}
