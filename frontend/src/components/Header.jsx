@@ -54,7 +54,8 @@ export const Header = () => {
                 : "https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/bsr81dag_logo_color.png"
               }
               alt="HelloKidney.ai" 
-              className={`h-8 w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
+              className={`w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
+              style={{ height: '1.8rem' }}
             />
           </Link>
 
