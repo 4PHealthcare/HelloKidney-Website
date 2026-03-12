@@ -196,14 +196,11 @@ export const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-20 animate-fade-in-up">
-            <span className="inline-block px-4 py-2 rounded-full bg-[#FA2931]/10 text-[#FA2931] text-sm font-semibold mb-6 border border-[#FA2931]/20">
-              THE SILENT EPIDEMIC
+            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+              <span className="text-sm text-[#0E1833] font-medium">The Silent Epidemic</span>
             </span>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0E1833] mb-6 leading-tight">
-              Why Early Screening
-              <span className="block bg-gradient-to-r from-[#FA2931] via-[#ff6b6b] to-[#FA2931] bg-clip-text text-transparent">
-                Saves Lives
-              </span>
+            <h2 className="text-[32px] font-bold text-[#0E1833] mb-6 leading-tight">
+              Why Early Screening Saves Lives
             </h2>
           </div>
 
@@ -363,10 +360,10 @@ export const Home = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <span className="inline-block px-4 py-2 rounded-full bg-[#FA2931]/10 text-[#FA2931] text-sm font-semibold mb-6 border border-[#FA2931]/20">
-              4 SIMPLE STEPS
+            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+              <span className="text-sm text-[#0E1833] font-medium">4 Simple Steps</span>
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-6">
+            <h2 className="text-[32px] font-bold text-[#0E1833] mb-6">
               How It Works
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -490,10 +487,10 @@ export const Home = () => {
           {/* Section Header - Left aligned like reference */}
           <div className="grid lg:grid-cols-3 gap-12 mb-16">
             <div className="lg:col-span-1">
-              <span className="inline-block px-4 py-2 rounded-full bg-[#FA2931]/10 text-[#FA2931] text-sm font-semibold mb-6 border border-[#FA2931]/20">
-                FOR HEALTHCARE PROFESSIONALS
+              <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+                <span className="text-sm text-[#0E1833] font-medium">For Healthcare Professionals</span>
               </span>
-              <h2 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-6 leading-tight">
+              <h2 className="text-[32px] font-bold text-[#0E1833] mb-6 leading-tight">
                 Who Can Benefit?
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
@@ -652,112 +649,173 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section className="py-24 bg-white overflow-hidden">
+      {/* Customer Reviews Section */}
+      <section className="py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Section Header */}
           <div className="text-center mb-16">
-            <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">Impact</p>
-            <h2 className="text-[2.5rem] font-bold text-[#0E1833] mb-4">
-              Real results. Really fast.
+            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+              <span className="text-sm text-[#0E1833] font-medium">Customer Reviews</span>
+            </span>
+            <h2 className="text-[32px] font-bold text-[#0E1833] mb-6">
+              What Healthcare Professionals Say
             </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {impactStats.map((stat, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className="mb-4">
-                  <div className="text-sm font-semibold text-gray-500 mb-2">{stat.logo}</div>
-                </div>
-                <div className="text-4xl font-bold text-[#FA2931] mb-3">{stat.metric}</div>
-                <p className="text-gray-700 font-medium mb-6 leading-relaxed">{stat.description}</p>
-                <div className="flex items-center space-x-3 pt-4 border-t border-gray-200">
-                  <div className="text-3xl">{stat.avatar}</div>
-                  <div>
-                    <div className="font-semibold text-gray-900 text-sm">{stat.author}</div>
-                    <div className="text-xs text-gray-500">{stat.title}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <div className="inline-flex flex-col sm:flex-row items-center gap-8 bg-gray-50 px-12 py-6 rounded-2xl">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#0E1833]">40%</div>
-                <div className="text-sm text-gray-600">Faster screening time</div>
-              </div>
-              <div className="hidden sm:block w-px h-12 bg-gray-300"></div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#0E1833]">25 hours</div>
-                <div className="text-sm text-gray-600">Saved per person per month</div>
-              </div>
-              <div className="hidden sm:block w-px h-12 bg-gray-300"></div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#0E1833]">95%</div>
-                <div className="text-sm text-gray-600">Say they catch cases earlier</div>
-              </div>
-            </div>
-            <p className="text-xs text-gray-500 mt-4">Source: Healthcare provider survey 2025</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Use Cases Section - White background */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-sm font-bold text-[#FA2931] uppercase tracking-wide mb-3">Use Cases</p>
-            <h2 className="text-[2.5rem] font-bold text-[#0E1833] mb-6">
-              Built for every team. For any workflow.
-            </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Turn screening processes into playbooks to train colleagues, assist patients, and drive early detection.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Trusted by leading healthcare providers across 10+ countries
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {detailedUseCases.map((useCase, index) => (
-              <Link
-                key={index}
-                to="/contact"
-                className="group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-200"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={useCase.image} 
-                    alt={useCase.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#030616]/80 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg">
-                      {useCase.icon}
-                    </div>
-                  </div>
-                </div>
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-[#0E1833] mb-3 group-hover:text-[#FA2931] transition-colors">
-                    {useCase.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">{useCase.description}</p>
-                  <div className="mt-4 flex items-center text-[#FA2931] font-semibold text-sm">
-                    Learn more 
-                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          {/* Reviews Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Review 1 */}
+            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+              <div className="flex items-center mb-6">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                     </svg>
-                  </div>
+                  ))}
                 </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                "HelloKidney has transformed how we screen for CKD in our diabetes clinic. We're catching kidney disease months earlier than before."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg mr-4">
+                  DR
+                </div>
+                <div>
+                  <div className="font-semibold text-[#0E1833]">Dr. Rajesh Kumar</div>
+                  <div className="text-sm text-gray-500">Diabetologist, Apollo Hospitals</div>
+                </div>
+              </div>
+            </div>
 
-          <div className="text-center mt-12">
-            <Link to="/contact">
-              <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white text-lg px-10 py-6 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200">
-                Try HelloKidney Free
-              </Button>
-            </Link>
+            {/* Review 2 */}
+            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+              <div className="flex items-center mb-6">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                "The simplicity of the workflow is incredible. Our community health workers can now screen patients in remote areas without any hassle."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  JO
+                </div>
+                <div>
+                  <div className="font-semibold text-[#0E1833]">James Ochieng</div>
+                  <div className="text-sm text-gray-500">Program Manager, Kenya Health Ministry</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 3 */}
+            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+              <div className="flex items-center mb-6">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                "We've reduced our screening time by 40% and increased early detection rates significantly. A must-have for any primary care clinic."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  PS
+                </div>
+                <div>
+                  <div className="font-semibold text-[#0E1833]">Dr. Priya Sharma</div>
+                  <div className="text-sm text-gray-500">General Practitioner, Max Healthcare</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 4 */}
+            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+              <div className="flex items-center mb-6">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                "The color-coded risk classification makes it so easy to explain results to patients. They understand immediately what steps to take."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  AM
+                </div>
+                <div>
+                  <div className="font-semibold text-[#0E1833]">Dr. Amit Mehta</div>
+                  <div className="text-sm text-gray-500">Nephrologist, Fortis Hospital</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 5 */}
+            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+              <div className="flex items-center mb-6">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                "Integrating HelloKidney into our cardiology practice has helped us identify cardiorenal syndrome cases much earlier. Excellent tool!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  SK
+                </div>
+                <div>
+                  <div className="font-semibold text-[#0E1833]">Dr. Sunita Kapoor</div>
+                  <div className="text-sm text-gray-500">Cardiologist, Medanta Hospital</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 6 */}
+            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+              <div className="flex items-center mb-6">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                "The follow-up tracking feature has been a game changer. We never lose track of patients who need repeat testing anymore."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                  VR
+                </div>
+                <div>
+                  <div className="font-semibold text-[#0E1833]">Dr. Vikram Rao</div>
+                  <div className="text-sm text-gray-500">Internal Medicine, AIIMS Delhi</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
