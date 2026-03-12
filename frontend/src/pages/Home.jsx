@@ -361,118 +361,125 @@ export const Home = () => {
           {/* Section Header */}
           <div className="text-center mb-20">
             <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
-              <span className="text-sm text-[#0E1833] font-medium">4 Simple Steps</span>
+              <span className="text-sm text-[#0E1833] font-medium">How it Works</span>
             </span>
             <h2 className="text-[32px] font-bold text-[#0E1833] mb-6">
               How It Works
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Screen for kidney disease risk in four simple steps from the comfort of your home.
+            <p className="text-[32px] font-bold text-[#0E1833] max-w-3xl mx-auto leading-tight">
+              Kidney disease risk in four simple steps from the comfort of your home.
             </p>
           </div>
 
-          {/* Steps Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Steps Grid - Cards with background images */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
             {/* Step 1 */}
-            <div className="group relative">
-              <div className="relative bg-white p-8 rounded-3xl border border-gray-200 hover:border-[#FA2931]/30 hover:shadow-xl transition-all duration-500 h-full">
-                {/* Step Number */}
-                <div className="absolute -top-5 left-8">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#FA2931]/30">
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/n5yv6qah_slide%201.png"
+                  alt="Register Patient"
+                  className="w-full h-full object-cover"
+                />
+                {/* Step Number Overlay */}
+                <div className="absolute top-4 left-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
                     1
                   </div>
                 </div>
-                
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-2xl bg-[#FA2931]/10 flex items-center justify-center mb-6 mt-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-                  </svg>
-                </div>
-                
-                <h3 className="text-xl font-bold text-[#0E1833] mb-3">Register Patient</h3>
-                <p className="text-gray-600 leading-relaxed">
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[260px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">Register Patient</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
                   Record basic demographics and risk profile (diabetes, hypertension, family history).
                 </p>
               </div>
-              
-              {/* Connector Line - Hidden on mobile */}
-              <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-[2px] bg-gradient-to-r from-gray-300 to-transparent"></div>
             </div>
 
             {/* Step 2 */}
-            <div className="group relative">
-              <div className="relative bg-white p-8 rounded-3xl border border-gray-200 hover:border-[#FA2931]/30 hover:shadow-xl transition-all duration-500 h-full">
-                {/* Step Number */}
-                <div className="absolute -top-5 left-8">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#FA2931]/30">
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/nvbv9b6r_slide2.png"
+                  alt="Perform Tests"
+                  className="w-full h-full object-cover"
+                />
+                {/* Step Number Overlay */}
+                <div className="absolute top-4 left-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
                     2
                   </div>
                 </div>
-                
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-2xl bg-[#FA2931]/10 flex items-center justify-center mb-6 mt-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                  </svg>
-                </div>
-                
-                <h3 className="text-xl font-bold text-[#0E1833] mb-3">Perform Tests</h3>
-                <p className="text-gray-600 leading-relaxed">
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[260px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">Perform Tests</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
                   Run a urine ACR test with Hellokidney UACR strips and an eGFR test with the creatinine meter.
                 </p>
               </div>
-              
-              {/* Connector Line */}
-              <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-[2px] bg-gradient-to-r from-gray-300 to-transparent"></div>
             </div>
 
             {/* Step 3 */}
-            <div className="group relative">
-              <div className="relative bg-white p-8 rounded-3xl border border-gray-200 hover:border-[#FA2931]/30 hover:shadow-xl transition-all duration-500 h-full">
-                {/* Step Number */}
-                <div className="absolute -top-5 left-8">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#FA2931]/30">
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/xlx7woyx_slide3.png"
+                  alt="View Risk Category"
+                  className="w-full h-full object-cover"
+                />
+                {/* Step Number Overlay */}
+                <div className="absolute top-4 left-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
                     3
                   </div>
                 </div>
-                
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-2xl bg-[#FA2931]/10 flex items-center justify-center mb-6 mt-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                </div>
-                
-                <h3 className="text-xl font-bold text-[#0E1833] mb-3">View Risk Category</h3>
-                <p className="text-gray-600 leading-relaxed">
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[260px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">View Risk Category</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
                   Receive a colour‑coded kidney risk classification with guidance for next steps.
                 </p>
               </div>
-              
-              {/* Connector Line */}
-              <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-[2px] bg-gradient-to-r from-gray-300 to-transparent"></div>
             </div>
 
             {/* Step 4 */}
-            <div className="group relative">
-              <div className="relative bg-white p-8 rounded-3xl border border-gray-200 hover:border-[#FA2931]/30 hover:shadow-xl transition-all duration-500 h-full">
-                {/* Step Number */}
-                <div className="absolute -top-5 left-8">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#FA2931]/30">
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/iarlard2_slide4.png"
+                  alt="Track Follow-Up"
+                  className="w-full h-full object-cover"
+                />
+                {/* Step Number Overlay */}
+                <div className="absolute top-4 left-4">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
                     4
                   </div>
                 </div>
-                
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-2xl bg-[#FA2931]/10 flex items-center justify-center mb-6 mt-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-[#FA2931]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                  </svg>
-                </div>
-                
-                <h3 className="text-xl font-bold text-[#0E1833] mb-3">Track Follow‑Up</h3>
-                <p className="text-gray-600 leading-relaxed">
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[260px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">Track Follow‑Up</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
                   Monitor follow‑up visits, repeat testing, and patient outcomes over time.
                 </p>
               </div>

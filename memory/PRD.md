@@ -117,6 +117,16 @@ Build a modern, responsive multi-page marketing website for HelloKidney.ai - an 
 2. ✅ **Hero Section Extension** - All pages now have hero sections extending behind header for proper transparent effect
 3. ✅ **Contact Form Backend** - Implemented real API endpoint replacing mock submission
 
+## Completed Tasks (March 12, 2026)
+
+### "How It Works" Section Redesign:
+1. ✅ **Badge Text**: Changed from "4 Simple Steps" to "How it Works"
+2. ✅ **Subtitle**: Updated to "Kidney disease risk in four simple steps from the comfort of your home." with bold 32px text matching other headings
+3. ✅ **Card Dimensions**: Resized to 400px height × 260px width
+4. ✅ **Icons Removed**: Removed lucide-react icons from inside cards
+5. ✅ **Background Images**: Added user-provided images (slide1-4.png) as card backgrounds
+6. ✅ **Text Position**: Moved step titles and descriptions below each card instead of inside them
+
 ---
 
 ## Prioritized Backlog
