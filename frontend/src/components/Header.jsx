@@ -23,6 +23,7 @@ export const Header = () => {
   }, []);
 
   const navItems = [
+    { name: 'Home', path: '/' },
     {
       name: 'Solutions',
       dropdown: [
@@ -135,45 +136,49 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-200 bg-white rounded-b-lg">
-            <nav className="flex flex-col space-y-1">
+          <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-lg border-t border-gray-100">
+            <nav className="flex flex-col py-4">
               {navItems.map((item, index) => (
                 item.dropdown ? (
-                  <div key={index}>
-                    <div className="px-4 py-2 text-sm font-semibold text-gray-900">{item.name}</div>
-                    {item.dropdown.map((subItem) => (
-                      <Link
-                        key={subItem.path}
-                        to={subItem.path}
-                        onClick={() => setIsMenuOpen(false)}
-                        className={`block pl-8 pr-4 py-2 text-sm transition-colors ${
-                          isActive(subItem.path)
-                            ? 'text-[#FA2931] font-medium'
-                            : 'text-gray-600 hover:text-[#FA2931]'
-                        }`}
-                      >
-                        {subItem.name}
-                      </Link>
-                    ))}
+                  <div key={index} className="border-b border-gray-100 last:border-b-0">
+                    <div className="px-6 py-3 text-sm font-semibold text-[#0E1833] uppercase tracking-wide">
+                      {item.name}
+                    </div>
+                    <div className="pb-3">
+                      {item.dropdown.map((subItem) => (
+                        <Link
+                          key={subItem.path}
+                          to={subItem.path}
+                          onClick={() => setIsMenuOpen(false)}
+                          className={`block px-8 py-2.5 text-base transition-colors ${
+                            isActive(subItem.path)
+                              ? 'text-[#FA2931] font-medium bg-red-50'
+                              : 'text-gray-600 hover:text-[#FA2931] hover:bg-gray-50'
+                          }`}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 ) : (
                   <Link
                     key={item.path}
                     to={item.path}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`px-4 py-2 text-sm transition-colors ${
+                    className={`px-6 py-3 text-base font-medium border-b border-gray-100 last:border-b-0 transition-colors ${
                       isActive(item.path)
-                        ? 'text-[#FA2931] font-medium'
-                        : 'text-gray-700 hover:text-[#FA2931]'
+                        ? 'text-[#FA2931] bg-red-50'
+                        : 'text-[#0E1833] hover:text-[#FA2931] hover:bg-gray-50'
                     }`}
                   >
                     {item.name}
                   </Link>
                 )
               ))}
-              <div className="pt-4 px-4">
+              <div className="px-6 pt-4 mt-2 border-t border-gray-100">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="w-full bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold">
+                  <Button className="w-full bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold py-3 text-base">
                     Request a Demo
                   </Button>
                 </Link>
