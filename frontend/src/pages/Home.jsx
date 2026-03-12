@@ -373,8 +373,8 @@ export const Home = () => {
             {/* Step 1 */}
             <div className="group flex flex-col items-center">
               <div 
-                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px' }}
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -382,15 +382,12 @@ export const Home = () => {
                   alt="Register Patient"
                   className="w-full h-full object-cover"
                 />
-                {/* Step Number Overlay */}
-                <div className="absolute top-4 left-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    1
-                  </div>
-                </div>
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
+                  1
+                </div>
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">Register Patient</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Record basic demographics and risk profile (diabetes, hypertension, family history).
@@ -401,8 +398,8 @@ export const Home = () => {
             {/* Step 2 */}
             <div className="group flex flex-col items-center">
               <div 
-                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px' }}
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -410,15 +407,12 @@ export const Home = () => {
                   alt="Perform Tests"
                   className="w-full h-full object-cover"
                 />
-                {/* Step Number Overlay */}
-                <div className="absolute top-4 left-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    2
-                  </div>
-                </div>
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
+                  2
+                </div>
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">Perform Tests</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Run a urine ACR test with Hellokidney UACR strips and an eGFR test with the creatinine meter.
@@ -429,8 +423,8 @@ export const Home = () => {
             {/* Step 3 */}
             <div className="group flex flex-col items-center">
               <div 
-                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px' }}
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -438,15 +432,12 @@ export const Home = () => {
                   alt="View Risk Category"
                   className="w-full h-full object-cover"
                 />
-                {/* Step Number Overlay */}
-                <div className="absolute top-4 left-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    3
-                  </div>
-                </div>
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
+                  3
+                </div>
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">View Risk Category</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Receive a colour‑coded kidney risk classification with guidance for next steps.
@@ -457,8 +448,8 @@ export const Home = () => {
             {/* Step 4 */}
             <div className="group flex flex-col items-center">
               <div 
-                className="relative rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '260px', height: '400px' }}
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '260px', height: '400px', borderRadius: '14px' }}
               >
                 {/* Background Image */}
                 <img 
@@ -466,15 +457,12 @@ export const Home = () => {
                   alt="Track Follow-Up"
                   className="w-full h-full object-cover"
                 />
-                {/* Step Number Overlay */}
-                <div className="absolute top-4 left-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    4
-                  </div>
-                </div>
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
+                  4
+                </div>
                 <h3 className="text-xl font-bold text-[#0E1833] mb-2">Track Follow‑Up</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Monitor follow‑up visits, repeat testing, and patient outcomes over time.
