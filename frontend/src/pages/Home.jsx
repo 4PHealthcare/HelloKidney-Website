@@ -119,25 +119,25 @@ export const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-[#0E1833]/40 via-transparent to-[#0E1833]/30"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-20 pb-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 pb-20">
           <div className="text-center max-w-4xl mx-auto">
             {/* Social Proof Badge */}
-            <div className="pt-[100px]">
-              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+            <div className="pt-[60px] sm:pt-[100px]">
+              <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full mb-4 sm:mb-6 border border-white/20">
                 <div className="flex items-center">
-                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                  <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 fill-yellow-400" />
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 fill-yellow-400" />
                 </div>
-                <span className="text-sm text-white font-medium">Trusted by healthcare partners</span>
+                <span className="text-xs sm:text-sm text-white font-medium">Trusted by healthcare partners</span>
               </div>
             </div>
 
             {/* Animated Headline */}
             <h1 
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight px-2"
               style={{ textShadow: '0 4px 20px rgba(0, 0, 0, 0.3)' }}
             >
               Detect Kidney Disease
@@ -145,15 +145,15 @@ export const Home = () => {
               <span className="text-[#FA2931]" style={{ textShadow: 'none' }}>at the point-of-care</span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-200 mb-10 font-medium leading-relaxed">
+            <p className="text-base sm:text-xl lg:text-2xl text-gray-200 mb-8 sm:mb-10 font-medium leading-relaxed px-4 sm:px-0">
               9 out of 10 people don't know they have kidney disease. HelloKidney finds them and tells you what to do about it.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
               <Link to="/contact">
                 <button 
-                  className="relative px-10 h-14 text-lg font-semibold text-white rounded-full transition-all duration-300 hover:scale-105"
+                  className="relative w-full sm:w-auto px-8 sm:px-10 h-12 sm:h-14 text-base sm:text-lg font-semibold text-white rounded-full transition-all duration-300 hover:scale-105"
                   style={{
                     background: 'rgba(255, 255, 255, 0.15)',
                     backdropFilter: 'blur(20px)',
@@ -167,7 +167,7 @@ export const Home = () => {
               </Link>
               <Link to="/how-it-works">
                 <button 
-                  className="relative px-10 h-14 text-lg font-semibold text-white rounded-full transition-all duration-300 hover:scale-105"
+                  className="relative w-full sm:w-auto px-8 sm:px-10 h-12 sm:h-14 text-base sm:text-lg font-semibold text-white rounded-full transition-all duration-300 hover:scale-105"
                   style={{
                     background: 'rgba(255, 255, 255, 0.1)',
                     backdropFilter: 'blur(20px)',
@@ -181,7 +181,7 @@ export const Home = () => {
               </Link>
             </div>
             {/* Bottom padding */}
-            <div className="pb-[100px]"></div>
+            <div className="pb-[60px] sm:pb-[100px]"></div>
           </div>
         </div>
       </section>
