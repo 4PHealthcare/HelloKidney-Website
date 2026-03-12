@@ -369,7 +369,7 @@ export const Home = () => {
           </div>
 
           {/* Steps Grid - Cards with background images */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
             {/* Step 1 */}
             <div className="group flex flex-col items-center">
               <div 
