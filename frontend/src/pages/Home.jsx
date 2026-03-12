@@ -321,36 +321,6 @@ export const Home = () => {
                 </p>
               </div>
             </div>
-
-            {/* Solution Card - Full Width */}
-            <div className="col-span-12 group">
-              <div className="relative p-8 lg:p-10 rounded-3xl bg-gradient-to-r from-[#0E1833] to-[#1a2847] hover:shadow-2xl hover:shadow-[#0E1833]/20 transition-all duration-500 overflow-hidden">
-                {/* Animated line */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FA2931] to-transparent animate-pulse-slow"></div>
-                
-                <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6">
-                  <div className="flex items-center space-x-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#FA2931] to-[#ff6b6b] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#FA2931]/30">
-                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Simple Screening Tests Can Identify CKD Early</h3>
-                      <p className="text-gray-400 text-lg">But access remains limited in primary care settings where it's needed most.</p>
-                    </div>
-                  </div>
-                  <Link to="/how-it-works">
-                    <button className="flex items-center space-x-2 px-8 py-4 rounded-full bg-white text-[#0E1833] font-semibold hover:bg-gray-100 transition-all duration-300 group-hover:scale-105 shadow-xl">
-                      <span>See How We Help</span>
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
