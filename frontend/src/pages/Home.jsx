@@ -385,10 +385,7 @@ export const Home = () => {
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
-                  1
-                </div>
-                <h3 className="text-xl font-bold text-[#0E1833] mb-2">Register Patient</h3>
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">1. Register Patient</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Record basic demographics and risk profile (diabetes, hypertension, family history).
                 </p>
@@ -410,10 +407,7 @@ export const Home = () => {
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
-                  2
-                </div>
-                <h3 className="text-xl font-bold text-[#0E1833] mb-2">Perform Tests</h3>
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">2. Perform Tests</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Run a urine ACR test with Hellokidney UACR strips and an eGFR test with the creatinine meter.
                 </p>
@@ -435,10 +429,7 @@ export const Home = () => {
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
-                  3
-                </div>
-                <h3 className="text-xl font-bold text-[#0E1833] mb-2">View Risk Category</h3>
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">3. View Risk Category</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Receive a colour‑coded kidney risk classification with guidance for next steps.
                 </p>
@@ -460,10 +451,7 @@ export const Home = () => {
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[260px]">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg shadow-lg mx-auto mb-3">
-                  4
-                </div>
-                <h3 className="text-xl font-bold text-[#0E1833] mb-2">Track Follow‑Up</h3>
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">4. Track Follow‑Up</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Monitor follow‑up visits, repeat testing, and patient outcomes over time.
                 </p>
