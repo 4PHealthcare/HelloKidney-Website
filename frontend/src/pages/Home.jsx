@@ -650,7 +650,7 @@ export const Home = () => {
       </section>
 
       {/* Customer Reviews Section */}
-      <section className="py-28 bg-white">
+      <section className="py-28 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -664,155 +664,313 @@ export const Home = () => {
               Trusted by leading healthcare providers across 10+ countries
             </p>
           </div>
+        </div>
 
-          {/* Reviews Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Review 1 */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
-              <div className="flex items-center mb-6">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
+        {/* Scrolling Reviews Marquee */}
+        <div className="relative w-full">
+          <div className="flex animate-marquee hover:pause">
+            {/* First set of cards */}
+            <div className="flex gap-6 pr-6">
+              {/* Review 1 */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "HelloKidney has transformed how we screen for CKD in our diabetes clinic. We're catching kidney disease months earlier than before."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg mr-4">
+                    DR
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Rajesh Kumar</div>
+                    <div className="text-sm text-gray-500">Diabetologist, Apollo Hospitals</div>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                "HelloKidney has transformed how we screen for CKD in our diabetes clinic. We're catching kidney disease months earlier than before."
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg mr-4">
-                  DR
+
+              {/* Review 2 */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
                 </div>
-                <div>
-                  <div className="font-semibold text-[#0E1833]">Dr. Rajesh Kumar</div>
-                  <div className="text-sm text-gray-500">Diabetologist, Apollo Hospitals</div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "The simplicity of the workflow is incredible. Our community health workers can now screen patients in remote areas without any hassle."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    JO
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">James Ochieng</div>
+                    <div className="text-sm text-gray-500">Program Manager, Kenya Health Ministry</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 3 */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "We've reduced our screening time by 40% and increased early detection rates significantly. A must-have for any primary care clinic."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    PS
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Priya Sharma</div>
+                    <div className="text-sm text-gray-500">General Practitioner, Max Healthcare</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 4 */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "The color-coded risk classification makes it so easy to explain results to patients. They understand immediately what steps to take."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    AM
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Amit Mehta</div>
+                    <div className="text-sm text-gray-500">Nephrologist, Fortis Hospital</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 5 */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "Integrating HelloKidney into our cardiology practice has helped us identify cardiorenal syndrome cases much earlier. Excellent tool!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    SK
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Sunita Kapoor</div>
+                    <div className="text-sm text-gray-500">Cardiologist, Medanta Hospital</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 6 */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "The follow-up tracking feature has been a game changer. We never lose track of patients who need repeat testing anymore."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    VR
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Vikram Rao</div>
+                    <div className="text-sm text-gray-500">Internal Medicine, AIIMS Delhi</div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Review 2 */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
-              <div className="flex items-center mb-6">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
+            {/* Duplicate set for seamless loop */}
+            <div className="flex gap-6 pr-6">
+              {/* Review 1 - Duplicate */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "HelloKidney has transformed how we screen for CKD in our diabetes clinic. We're catching kidney disease months earlier than before."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FA2931] to-[#d91f27] flex items-center justify-center text-white font-bold text-lg mr-4">
+                    DR
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Rajesh Kumar</div>
+                    <div className="text-sm text-gray-500">Diabetologist, Apollo Hospitals</div>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                "The simplicity of the workflow is incredible. Our community health workers can now screen patients in remote areas without any hassle."
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
-                  JO
-                </div>
-                <div>
-                  <div className="font-semibold text-[#0E1833]">James Ochieng</div>
-                  <div className="text-sm text-gray-500">Program Manager, Kenya Health Ministry</div>
-                </div>
-              </div>
-            </div>
 
-            {/* Review 3 */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
-              <div className="flex items-center mb-6">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
+              {/* Review 2 - Duplicate */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "The simplicity of the workflow is incredible. Our community health workers can now screen patients in remote areas without any hassle."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    JO
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">James Ochieng</div>
+                    <div className="text-sm text-gray-500">Program Manager, Kenya Health Ministry</div>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                "We've reduced our screening time by 40% and increased early detection rates significantly. A must-have for any primary care clinic."
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg mr-4">
-                  PS
-                </div>
-                <div>
-                  <div className="font-semibold text-[#0E1833]">Dr. Priya Sharma</div>
-                  <div className="text-sm text-gray-500">General Practitioner, Max Healthcare</div>
-                </div>
-              </div>
-            </div>
 
-            {/* Review 4 */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
-              <div className="flex items-center mb-6">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
+              {/* Review 3 - Duplicate */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "We've reduced our screening time by 40% and increased early detection rates significantly. A must-have for any primary care clinic."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    PS
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Priya Sharma</div>
+                    <div className="text-sm text-gray-500">General Practitioner, Max Healthcare</div>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                "The color-coded risk classification makes it so easy to explain results to patients. They understand immediately what steps to take."
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center text-white font-bold text-lg mr-4">
-                  AM
-                </div>
-                <div>
-                  <div className="font-semibold text-[#0E1833]">Dr. Amit Mehta</div>
-                  <div className="text-sm text-gray-500">Nephrologist, Fortis Hospital</div>
-                </div>
-              </div>
-            </div>
 
-            {/* Review 5 */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
-              <div className="flex items-center mb-6">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
+              {/* Review 4 - Duplicate */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "The color-coded risk classification makes it so easy to explain results to patients. They understand immediately what steps to take."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    AM
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Amit Mehta</div>
+                    <div className="text-sm text-gray-500">Nephrologist, Fortis Hospital</div>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                "Integrating HelloKidney into our cardiology practice has helped us identify cardiorenal syndrome cases much earlier. Excellent tool!"
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-white font-bold text-lg mr-4">
-                  SK
-                </div>
-                <div>
-                  <div className="font-semibold text-[#0E1833]">Dr. Sunita Kapoor</div>
-                  <div className="text-sm text-gray-500">Cardiologist, Medanta Hospital</div>
-                </div>
-              </div>
-            </div>
 
-            {/* Review 6 */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
-              <div className="flex items-center mb-6">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
+              {/* Review 5 - Duplicate */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "Integrating HelloKidney into our cardiology practice has helped us identify cardiorenal syndrome cases much earlier. Excellent tool!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    SK
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Sunita Kapoor</div>
+                    <div className="text-sm text-gray-500">Cardiologist, Medanta Hospital</div>
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                "The follow-up tracking feature has been a game changer. We never lose track of patients who need repeat testing anymore."
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white font-bold text-lg mr-4">
-                  VR
+
+              {/* Review 6 - Duplicate */}
+              <div className="flex-shrink-0 w-[400px] bg-gradient-to-br from-gray-50 to-white p-8 rounded-3xl border border-gray-100 hover:shadow-xl hover:border-[#FA2931]/20 transition-all duration-500">
+                <div className="flex items-center mb-6">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                      </svg>
+                    ))}
+                  </div>
                 </div>
-                <div>
-                  <div className="font-semibold text-[#0E1833]">Dr. Vikram Rao</div>
-                  <div className="text-sm text-gray-500">Internal Medicine, AIIMS Delhi</div>
+                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                  "The follow-up tracking feature has been a game changer. We never lose track of patients who need repeat testing anymore."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                    VR
+                  </div>
+                  <div>
+                    <div className="font-semibold text-[#0E1833]">Dr. Vikram Rao</div>
+                    <div className="text-sm text-gray-500">Internal Medicine, AIIMS Delhi</div>
+                  </div>
                 </div>
               </div>
             </div>
