@@ -363,9 +363,6 @@ export const Home = () => {
             <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
               <span className="text-sm text-[#0E1833] font-medium">How it Works</span>
             </span>
-            <h2 className="text-[32px] font-bold text-[#0E1833] mb-6">
-              How It Works
-            </h2>
             <p className="text-[32px] font-bold text-[#0E1833] max-w-3xl mx-auto leading-tight">
               Kidney disease risk in four simple steps from the comfort of your home.
             </p>
