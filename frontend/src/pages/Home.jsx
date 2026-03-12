@@ -493,7 +493,7 @@ export const Home = () => {
               <h2 className="text-[32px] font-bold text-[#0E1833] mb-6 leading-tight">
                 Who Can Benefit?
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+              <p className="text-base text-gray-600 leading-relaxed mb-8">
                 HelloKidney.ai is designed for healthcare professionals at the forefront of kidney disease management.
               </p>
               <Link to="/contact">
