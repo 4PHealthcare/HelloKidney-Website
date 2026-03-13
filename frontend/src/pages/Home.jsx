@@ -280,6 +280,74 @@ export const Home = () => {
         </div>
       </section>
 
+      {/* Our Solution Section */}
+      <section className="relative py-20 sm:py-28 bg-[#f8fafc] overflow-hidden">
+        {/* Background subtle pattern */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#0E1833 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Left Content */}
+            <div className="order-2 lg:order-1">
+              {/* Section Label */}
+              <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+                <span className="w-2 h-2 bg-[#0E1833] rounded-full"></span>
+                <span className="text-sm text-[#0E1833] font-semibold uppercase tracking-wider">Our Solution</span>
+              </span>
+
+              {/* Heading */}
+              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0E1833] mb-6 leading-tight">
+                HelloKidney bridges the gap between detection and care.
+              </h2>
+
+              {/* Description */}
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Screen patients for chronic kidney disease in minutes using urine ACR and eGFR. Then get physician-led, KDIGO guideline-directed treatment recommendations — personalised to each patient's clinical data and test results.
+              </p>
+
+              {/* Highlight Statement */}
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-1 h-16 bg-gradient-to-b from-[#FA2931] to-[#FA2931]/30 rounded-full"></div>
+                <p className="text-xl sm:text-2xl font-semibold text-[#0E1833]">
+                  From screening to treatment plan in one app.
+                </p>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/contact">
+                  <button className="px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-full hover:bg-[#d91f27] transition-all duration-300 shadow-lg shadow-[#FA2931]/20 hover:shadow-xl">
+                    Request a Demo
+                  </button>
+                </Link>
+                <Link to="/how-it-works">
+                  <button className="px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-full border border-gray-200 hover:border-[#0E1833]/30 hover:bg-gray-50 transition-all duration-300">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Image - Mobile App Screenshot */}
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Glow effect behind phone */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/20 via-[#0E1833]/10 to-transparent rounded-[3rem] blur-3xl scale-110"></div>
+                
+                {/* Phone mockup container */}
+                <div className="relative bg-[#0E1833] rounded-[2.5rem] p-2 shadow-2xl shadow-[#0E1833]/30">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/c1ccldvq_hellokidney_mobile%20app.png"
+                    alt="HelloKidney Mobile App"
+                    className="w-[280px] sm:w-[320px] rounded-[2rem]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
       <section className="py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
