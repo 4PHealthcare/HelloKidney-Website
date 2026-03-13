@@ -24,13 +24,7 @@ export const Header = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    {
-      name: 'Solutions',
-      dropdown: [
-        { name: 'For Healthcare Providers', path: '/providers' },
-        { name: 'For Programs & Governments', path: '/programs' }
-      ]
-    },
+    { name: 'Solutions', path: '/solutions' },
     { name: 'How It Works', path: '/how-it-works' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' }

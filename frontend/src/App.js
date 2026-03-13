@@ -4,6 +4,7 @@ import { Toaster } from './components/ui/sonner';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
+import { Solutions } from './pages/Solutions';
 import { Providers } from './pages/Providers';
 import { Programs } from './pages/Programs';
 import { HowItWorks } from './pages/HowItWorks';
@@ -22,6 +23,7 @@ function App() {
         <main className="pt-20">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/solutions" element={<Solutions />} />
             <Route path="/providers" element={<Providers />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
