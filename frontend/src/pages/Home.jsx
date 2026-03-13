@@ -286,20 +286,20 @@ export const Home = () => {
         <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#0E1833 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Section Header - Centered at top */}
+          <div className="text-center mb-16">
+            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+              <span className="w-2 h-2 bg-[#0E1833] rounded-full"></span>
+              <span className="text-sm text-[#0E1833] font-semibold uppercase tracking-wider">Our Solution</span>
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0E1833] leading-tight max-w-3xl mx-auto">
+              HelloKidney bridges the gap between detection and care.
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Content */}
             <div className="order-2 lg:order-1">
-              {/* Section Label */}
-              <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
-                <span className="w-2 h-2 bg-[#0E1833] rounded-full"></span>
-                <span className="text-sm text-[#0E1833] font-semibold uppercase tracking-wider">Our Solution</span>
-              </span>
-
-              {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0E1833] mb-6 leading-tight">
-                HelloKidney bridges the gap between detection and care.
-              </h2>
-
               {/* Description */}
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Screen patients for chronic kidney disease in minutes using urine ACR and eGFR. Then get physician-led, KDIGO guideline-directed treatment recommendations — personalised to each patient's clinical data and test results.
@@ -332,14 +332,14 @@ export const Home = () => {
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="relative">
                 {/* Glow effect behind phone */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/20 via-[#0E1833]/10 to-transparent rounded-[3rem] blur-3xl scale-110"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/10 via-[#0E1833]/5 to-transparent rounded-[2rem] blur-2xl scale-110"></div>
                 
                 {/* Phone mockup container */}
-                <div className="relative bg-[#0E1833] rounded-[2.5rem] p-2 shadow-2xl shadow-[#0E1833]/30">
+                <div className="relative bg-[#0E1833] rounded-[1.5rem] p-1.5 shadow-xl shadow-[#0E1833]/20">
                   <img 
                     src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/c1ccldvq_hellokidney_mobile%20app.png"
                     alt="HelloKidney Mobile App"
-                    className="w-[280px] sm:w-[320px] rounded-[2rem]"
+                    className="w-[200px] sm:w-[240px] rounded-[1.2rem]"
                   />
                 </div>
               </div>
