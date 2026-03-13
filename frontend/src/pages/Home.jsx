@@ -294,7 +294,7 @@ export const Home = () => {
               <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">Our Solution</span>
             </span>
             <h2 className="text-[32px] font-bold text-[#0E1833] leading-tight max-w-4xl mx-auto">
-              HelloKidney bridges the gap between <span className="text-[#FA2931]">detection</span> and <span className="text-[#FA2931]">care</span>.
+              HelloKidney bridges the<br /> gap between <span className="text-[#FA2931]">detection</span> and <span className="text-[#FA2931]">care</span>.
             </h2>
           </div>
 
