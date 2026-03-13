@@ -293,7 +293,7 @@ export const Home = () => {
               <span className="w-2 h-2 bg-[#FA2931] rounded-full animate-pulse"></span>
               <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">Our Solution</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0E1833] leading-tight max-w-4xl mx-auto">
+            <h2 className="text-[32px] font-bold text-[#0E1833] leading-tight max-w-4xl mx-auto">
               HelloKidney bridges the gap between <span className="text-[#FA2931]">detection</span> and <span className="text-[#FA2931]">care</span>.
             </h2>
           </div>
