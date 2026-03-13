@@ -281,65 +281,99 @@ export const Home = () => {
       </section>
 
       {/* Our Solution Section */}
-      <section className="relative py-20 sm:py-28 bg-[#f8fafc] overflow-hidden">
-        {/* Background subtle pattern */}
-        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#0E1833 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+      <section className="relative py-20 sm:py-28 bg-gradient-to-b from-white to-[#f8fafc] overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FA2931]/5 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#0E1833]/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header - Centered at top */}
           <div className="text-center mb-16">
-            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
-              <span className="w-2 h-2 bg-[#0E1833] rounded-full"></span>
-              <span className="text-sm text-[#0E1833] font-semibold uppercase tracking-wider">Our Solution</span>
+            <span className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FA2931]/10 to-[#FA2931]/5 px-5 py-2.5 rounded-full mb-6 border border-[#FA2931]/20">
+              <span className="w-2 h-2 bg-[#FA2931] rounded-full animate-pulse"></span>
+              <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">Our Solution</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0E1833] leading-tight max-w-3xl mx-auto">
-              HelloKidney bridges the gap between detection and care.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0E1833] leading-tight max-w-4xl mx-auto">
+              HelloKidney bridges the gap between <span className="text-[#FA2931]">detection</span> and <span className="text-[#FA2931]">care</span>.
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left Content */}
-            <div className="order-2 lg:order-1">
-              {/* Description */}
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Screen patients for chronic kidney disease in minutes using urine ACR and eGFR. Then get physician-led, KDIGO guideline-directed treatment recommendations — personalised to each patient's clinical data and test results.
-              </p>
+          <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+            {/* Left Content - Takes 3 columns */}
+            <div className="lg:col-span-3 order-2 lg:order-1">
+              {/* Description Card */}
+              <div className="bg-white rounded-3xl p-8 shadow-xl shadow-gray-200/50 border border-gray-100 mb-8">
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  Screen patients for chronic kidney disease in minutes using <span className="font-semibold text-[#0E1833]">urine ACR</span> and <span className="font-semibold text-[#0E1833]">eGFR</span>. Then get physician-led, KDIGO guideline-directed treatment recommendations — personalised to each patient's clinical data and test results.
+                </p>
+                
+                {/* Feature Pills */}
+                <div className="flex flex-wrap gap-3">
+                  <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#0E1833]/5 rounded-full text-sm font-medium text-[#0E1833]">
+                    <svg className="w-4 h-4 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                    </svg>
+                    Quick Screening
+                  </span>
+                  <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#0E1833]/5 rounded-full text-sm font-medium text-[#0E1833]">
+                    <svg className="w-4 h-4 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                    </svg>
+                    KDIGO Guidelines
+                  </span>
+                  <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#0E1833]/5 rounded-full text-sm font-medium text-[#0E1833]">
+                    <svg className="w-4 h-4 text-[#FA2931]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                    </svg>
+                    Personalized Care
+                  </span>
+                </div>
+              </div>
 
               {/* Highlight Statement */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-1 h-16 bg-gradient-to-b from-[#FA2931] to-[#FA2931]/30 rounded-full"></div>
-                <p className="text-xl sm:text-2xl font-semibold text-[#0E1833]">
-                  From screening to treatment plan in one app.
-                </p>
+              <div className="bg-gradient-to-r from-[#0E1833] to-[#1a2847] rounded-2xl p-6 sm:p-8 mb-8">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-[#FA2931] flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <p className="text-xl sm:text-2xl font-bold text-white">
+                    From screening to treatment plan in one app.
+                  </p>
+                </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
-                  <button className="px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-full hover:bg-[#d91f27] transition-all duration-300 shadow-lg shadow-[#FA2931]/20 hover:shadow-xl">
+                  <button className="w-full sm:w-auto px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-full hover:bg-[#d91f27] transition-all duration-300 shadow-lg shadow-[#FA2931]/20 hover:shadow-xl hover:scale-105">
                     Request a Demo
                   </button>
                 </Link>
                 <Link to="/how-it-works">
-                  <button className="px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-full border border-gray-200 hover:border-[#0E1833]/30 hover:bg-gray-50 transition-all duration-300">
+                  <button className="w-full sm:w-auto px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-full border-2 border-gray-200 hover:border-[#0E1833] hover:bg-gray-50 transition-all duration-300">
                     Learn More
                   </button>
                 </Link>
               </div>
             </div>
 
-            {/* Right Image - Mobile App Screenshot */}
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+            {/* Right Image - Takes 2 columns */}
+            <div className="lg:col-span-2 order-1 lg:order-2 flex justify-center">
               <div className="relative">
-                {/* Glow effect behind phone */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/10 via-[#0E1833]/5 to-transparent rounded-[2rem] blur-2xl scale-110"></div>
+                {/* Decorative circles */}
+                <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#FA2931]/10 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#0E1833]/10 rounded-full blur-xl"></div>
                 
-                {/* Phone mockup container */}
-                <div className="relative bg-[#0E1833] rounded-[1.5rem] p-1.5 shadow-xl shadow-[#0E1833]/20">
+                {/* Phone mockup */}
+                <div className="relative bg-gradient-to-b from-[#0E1833] to-[#0a0f1f] rounded-[2rem] p-2 shadow-2xl">
+                  {/* Phone notch */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-6 bg-[#0E1833] rounded-b-xl z-10"></div>
                   <img 
                     src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/c1ccldvq_hellokidney_mobile%20app.png"
                     alt="HelloKidney Mobile App"
-                    className="w-[200px] sm:w-[240px] rounded-[1.2rem]"
+                    className="w-[220px] sm:w-[260px] rounded-[1.5rem]"
                   />
                 </div>
               </div>
