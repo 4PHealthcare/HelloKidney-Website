@@ -376,7 +376,7 @@ export const Home = () => {
                   <img 
                     src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/c1ccldvq_hellokidney_mobile%20app.png"
                     alt="HelloKidney Mobile App"
-                    className="w-[220px] sm:w-[260px] rounded-[1.5rem]"
+                    className="w-[180px] sm:w-[200px] rounded-[1.5rem]"
                   />
                 </div>
               </div>
