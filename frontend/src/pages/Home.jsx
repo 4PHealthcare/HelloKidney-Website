@@ -304,8 +304,7 @@ export const Home = () => {
               {/* Description Card */}
               <div className="bg-white rounded-3xl p-8 shadow-xl shadow-gray-200/50 border border-gray-100 mb-8">
                 <h3 className="text-2xl font-bold text-[#0E1833] mb-4">
-                  Detect Kidney Disease<br />
-                  at the <span className="text-[#FA2931]">"point-of-care"</span>
+                  Detect Kidney Disease at the "point-of-care"
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
                   Screen patients for chronic kidney disease in minutes using <span className="font-semibold text-[#0E1833]">urine ACR</span> and <span className="font-semibold text-[#0E1833]">eGFR</span>. Then get physician-led, KDIGO guideline-directed treatment recommendations — personalised to each patient's clinical data and test results.
