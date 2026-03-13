@@ -186,6 +186,104 @@ export const Home = () => {
         </div>
       </section>
 
+      {/* The Problem Section - Dramatic Impact */}
+      <section className="relative py-20 sm:py-28 bg-[#0E1833] overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FA2931]/20 rounded-full blur-[150px]"></div>
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#FA2931]/10 rounded-full blur-[120px]"></div>
+        </div>
+        
+        {/* Animated vertical lines */}
+        <div className="absolute inset-0 overflow-hidden opacity-10">
+          <div className="absolute left-1/4 top-0 w-px h-full bg-gradient-to-b from-transparent via-white to-transparent"></div>
+          <div className="absolute left-1/2 top-0 w-px h-full bg-gradient-to-b from-transparent via-white to-transparent"></div>
+          <div className="absolute left-3/4 top-0 w-px h-full bg-gradient-to-b from-transparent via-white to-transparent"></div>
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Label */}
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="inline-flex items-center space-x-2 bg-[#FA2931]/20 backdrop-blur-sm px-4 py-2 rounded-full border border-[#FA2931]/30">
+              <span className="w-2 h-2 bg-[#FA2931] rounded-full animate-pulse"></span>
+              <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">The Problem</span>
+            </span>
+          </div>
+
+          {/* Main Content - Three Stacked Cards */}
+          <div className="space-y-6 sm:space-y-8">
+            {/* Card 1 - The Statistic */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#FA2931]/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-10 hover:border-[#FA2931]/30 transition-all duration-500">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-10">
+                  <div className="flex-shrink-0">
+                    <div className="text-6xl sm:text-8xl lg:text-9xl font-black text-[#FA2931]" style={{ lineHeight: '1' }}>
+                      90%
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-xl sm:text-2xl lg:text-3xl text-white font-medium leading-relaxed">
+                      of people with kidney disease <span className="text-[#FA2931] font-bold">don't know they have it.</span>
+                    </p>
+                    <p className="text-base sm:text-lg text-gray-400 mt-3">
+                      When they finally discover it, kidneys are often beyond saving.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 - The Gap */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-10 hover:border-amber-500/30 transition-all duration-500">
+                <div className="flex flex-col sm:flex-row items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-500/20 flex items-center justify-center">
+                      <svg className="w-7 h-7 sm:w-8 sm:h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-xl sm:text-2xl text-white font-medium leading-relaxed">
+                      But even when we detect CKD early, <span className="text-amber-400 font-bold">patients fall through the cracks.</span>
+                    </p>
+                    <div className="flex flex-wrap gap-3 mt-4">
+                      <span className="px-4 py-2 bg-white/5 rounded-full text-gray-400 text-sm border border-white/10">No clear treatment plan</span>
+                      <span className="px-4 py-2 bg-white/5 rounded-full text-gray-400 text-sm border border-white/10">No follow-up</span>
+                      <span className="px-4 py-2 bg-white/5 rounded-full text-gray-400 text-sm border border-white/10">No action</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 - The Truth */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-gradient-to-r from-[#FA2931] to-[#d91f27] rounded-2xl p-6 sm:p-10 shadow-2xl shadow-[#FA2931]/20">
+                <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/20 flex items-center justify-center">
+                      <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-2xl sm:text-3xl lg:text-4xl text-white font-bold leading-tight">
+                      Detection without action saves no one.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Early Kidney Screening Matters Section - Modern Bento Grid Design */}
       <section className="relative py-28 bg-[#f8fafc] overflow-hidden">
         {/* Animated gradient orbs */}
