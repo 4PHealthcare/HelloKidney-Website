@@ -91,18 +91,17 @@ export const Solutions = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section 
-        className="relative py-32 pt-40 -mt-20 bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(135deg, #0E1833 0%, #1a2847 100%)`,
-        }}
-      >
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-[#FA2931]/10 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-10 left-10 w-72 h-72 bg-white/5 rounded-full blur-[100px]"></div>
+      {/* Hero Section - Full Screen */}
+      <section className="relative h-screen flex items-center overflow-hidden -mt-20">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/bxw9gylr_68d44b93f5fd1d0320d476f0_333bae936a6cb9b2f57145ed9fd2a73a_hero%20bg.png')`,
+          }}
+        >
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
           <span className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
             <span className="w-2 h-2 bg-[#FA2931] rounded-full animate-pulse"></span>
             <span className="text-sm text-white font-medium">Solutions</span>
