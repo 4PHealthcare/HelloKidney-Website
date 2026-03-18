@@ -23,7 +23,7 @@ export const HowItWorks = () => {
           }}
         >
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ paddingTop: '0.1rem' }}>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             How It Works
           </h1>
