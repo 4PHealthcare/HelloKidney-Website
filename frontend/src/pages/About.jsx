@@ -30,7 +30,7 @@ export const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-screen flex items-center -mt-20 pt-20">
+      <section className="relative min-h-screen flex items-center -mt-20">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -40,7 +40,10 @@ export const About = () => {
         >
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0E1833] mb-6 leading-tight max-w-4xl mx-auto">
+          <h1 
+            className="font-bold text-[#0E1833] mb-6 leading-tight max-w-4xl mx-auto"
+            style={{ fontSize: '60px', letterSpacing: '-1.5px' }}
+          >
             We're on a mission to unleash and uplevel the world's know-how.
           </h1>
           <p className="text-xl text-gray-600 mb-10">
