@@ -144,6 +144,9 @@ export const HowItWorks = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
+            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+              <span className="text-sm text-[#0E1833] font-medium">Urine ACR test</span>
+            </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0E1833] leading-tight">
               The best time to know is early.<br />
               The best time to act is now.
