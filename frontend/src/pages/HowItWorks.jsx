@@ -42,12 +42,12 @@ export const HowItWorks = () => {
               <span className="text-sm text-[#0E1833] font-medium">How it Works</span>
             </span>
             <p className="text-[32px] font-bold text-[#0E1833] max-w-3xl mx-auto leading-tight">
-              Kidney disease risk in three simple steps from the comfort of your home.
+              Kidney disease risk in four simple steps from the comfort of your home.
             </p>
           </div>
 
           {/* Steps Grid - Cards with background images */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
             {/* Step 1 */}
             <div className="group flex flex-col items-center">
               <div 
@@ -92,7 +92,29 @@ export const HowItWorks = () => {
               </div>
             </div>
 
-            {/* Step 3 (formerly Step 4) */}
+            {/* Step 3 */}
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/xlx7woyx_slide3.png"
+                  alt="View Risk Category"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[290px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">3. View Risk Category</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Receive a colour‑coded kidney risk classification with guidance for next steps.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 4 */}
             <div className="group flex flex-col items-center">
               <div 
                 className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
@@ -107,7 +129,7 @@ export const HowItWorks = () => {
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[290px]">
-                <h3 className="text-xl font-bold text-[#0E1833] mb-2">3. Track Follow‑Up</h3>
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">4. Track Follow‑Up</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Monitor follow‑up visits, repeat testing, and patient outcomes over time.
                 </p>
@@ -117,74 +139,65 @@ export const HowItWorks = () => {
         </div>
       </section>
 
-      {/* 4-Step Process */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
-            {howItWorksSteps.map((step, index) => (
-              <div key={step.id} className="relative">
-                <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-12`}>
-                  {/* Icon & Number */}
-                  <div className="flex-shrink-0">
-                    <div className="relative">
-                      <div className="w-32 h-32 bg-gradient-to-br from-[#FA2931] to-[#d91f27] rounded-2xl flex items-center justify-center text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        {stepIcons[index]}
-                      </div>
-                      <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#0E1833] text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
-                        {step.id}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 bg-gray-50 p-8 rounded-xl border border-gray-200">
-                    <h3 className="text-2xl font-bold text-[#0E1833] mb-4">
-                      {step.title}
-                    </h3>
-                    <p className="text-lg text-gray-700 leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Connecting Line */}
-                {index < howItWorksSteps.length - 1 && (
-                  <div className="hidden md:block absolute left-16 top-32 w-0.5 h-16 bg-gradient-to-b from-[#FA2931] to-transparent"></div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Technology Overview */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1833] mb-4">
-              Technology Overview
+      {/* Early Detection Section */}
+      <section className="py-24 bg-[#F8F9FB]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0E1833] leading-tight">
+              The best time to know is early.<br />
+              The best time to act is now.
             </h2>
           </div>
-          
-          <div className="bg-white p-10 rounded-2xl shadow-sm border border-gray-200">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              HelloKidney.ai leverages smartphone technology for guided urine ACR testing workflows, combined with a secure cloud backend that enables real-time data synchronization and analysis. Healthcare teams can access the platform through web browsers or mobile applications, ensuring flexibility across different clinical settings.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl mb-3">📱</div>
-                <h4 className="font-semibold text-[#0E1833] mb-2">Smartphone Workflow</h4>
-                <p className="text-sm text-gray-600">Guided testing with compatible devices</p>
+
+          {/* Two Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Side - Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/c1ccldvq_hellokidney_mobile%20app.png"
+                  alt="HelloKidney Mobile App"
+                  className="w-full max-w-[380px] rounded-3xl shadow-2xl"
+                />
               </div>
-              <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl mb-3">☁️</div>
-                <h4 className="font-semibold text-[#0E1833] mb-2">Secure Cloud Backend</h4>
-                <p className="text-sm text-gray-600">Encrypted data storage and processing</p>
+            </div>
+
+            {/* Right Side - Content */}
+            <div className="space-y-6">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0E1833] leading-tight">
+                Detect CKD risk under<br />
+                <span className="text-[#FA2931]">60 Seconds</span>
+              </h3>
+              
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  People with diabetes, high blood pressure, obesity, heart 
+                  disease, and older people are more likely to have kidney 
+                  problems. In fact, 4 out of 10 people with diabetes and 
+                  1 out of 5 people with high blood pressure suffer from kidney 
+                  disease.
+                </p>
+                <p>
+                  The test is easy to use and can be performed in 
+                  clinics or at home by patients using a smartphone. It checks 
+                  the level of a substance in your urine called "Urine 
+                  Albumin/Creatinine Ratio (UACR)".
+                </p>
+                <p>
+                  This test helps identify kidney disease early, enabling 
+                  appropriate treatment and improved health outcomes.
+                </p>
               </div>
-              <div className="text-center p-6 bg-gray-50 rounded-lg">
-                <div className="text-4xl mb-3">💻</div>
-                <h4 className="font-semibold text-[#0E1833] mb-2">Multi-Platform Access</h4>
-                <p className="text-sm text-gray-600">Browser and app-based interfaces</p>
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-full hover:bg-[#e02129] transition-colors shadow-lg hover:shadow-xl">
+                  Order Now
+                </button>
+                <button className="px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-full border-2 border-[#0E1833] hover:bg-[#0E1833] hover:text-white transition-colors">
+                  Talk to Sales
+                </button>
               </div>
             </div>
           </div>
