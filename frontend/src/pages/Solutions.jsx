@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
+import { CTASection } from '../components/CTASection';
 import { 
   Stethoscope, Users, FileCheck, Clock, Building2, Tent,
   BarChart3, Settings, Database, TrendingUp, MapPin,
@@ -537,6 +538,9 @@ export const Solutions = () => {
           </section>
         </div>
       )}
+
+      {/* CTA Section */}
+      <CTASection />
     </div>
   );
 };

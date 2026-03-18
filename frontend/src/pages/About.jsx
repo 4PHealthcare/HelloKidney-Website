@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, Heart, Users, Globe } from 'lucide-react';
+import { CTASection } from '../components/CTASection';
 
 export const About = () => {
   const values = [
@@ -124,6 +125,9 @@ export const About = () => {
           </p>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTASection />
     </div>
   );
 };

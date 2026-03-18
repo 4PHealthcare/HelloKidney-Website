@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '../components/ui/accordion';
+import { CTASection } from '../components/CTASection';
 
 export const FAQ = () => {
   return (
@@ -61,6 +62,9 @@ export const FAQ = () => {
           </a>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTASection />
     </div>
   );
 };

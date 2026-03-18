@@ -1,6 +1,7 @@
 import React from 'react';
 import { howItWorksSteps } from '../utils/mock';
 import { UserPlus, TestTube, FileSearch, Activity } from 'lucide-react';
+import { CTASection } from '../components/CTASection';
 
 export const HowItWorks = () => {
   const stepIcons = [
@@ -124,6 +125,9 @@ export const HowItWorks = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTASection />
     </div>
   );
 };
