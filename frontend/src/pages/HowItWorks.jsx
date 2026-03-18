@@ -169,8 +169,7 @@ export const HowItWorks = () => {
             {/* Right Side - Content */}
             <div className="space-y-6">
               <h3 className="text-[24px] font-bold text-[#0E1833] leading-tight">
-                Detect CKD risk under<br />
-                <span className="text-[#FA2931]">60 Seconds</span>
+                Detect CKD risk under <span className="text-[#FA2931]">60 Seconds</span>
               </h3>
               
               <div className="space-y-4 text-gray-700 leading-relaxed">
