@@ -206,6 +206,75 @@ export const HowItWorks = () => {
         </div>
       </section>
 
+      {/* eGFR Test Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+              <span className="text-sm text-[#0E1833] font-medium">eGFR Test</span>
+            </span>
+            <h2 className="text-[34px] font-bold leading-tight">
+              <span className="text-[#FA2931]">eGFR</span> <span className="text-[#0E1833]">Creatinine Meter</span>
+            </h2>
+          </div>
+
+          {/* Tabs */}
+          <div className="flex justify-center mb-12">
+            <div className="inline-flex bg-gray-100 rounded-full p-1">
+              <button className="px-6 py-2 rounded-full bg-[#0E1833] text-white font-medium transition-all">
+                Eaglenos
+              </button>
+              <button className="px-6 py-2 rounded-full text-gray-600 font-medium hover:text-[#0E1833] transition-all">
+                NovaMaxPro
+              </button>
+            </div>
+          </div>
+
+          {/* Two Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Side - Content */}
+            <div className="space-y-6">
+              <h3 className="text-[24px] font-bold text-[#0E1833]">
+                Eaglenos Creatinine Meter
+              </h3>
+              
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Rapid, lab-accurate measurement of creatinine 
+                  and eGFR in under 30 seconds.
+                </p>
+                <p>
+                  eGFR and creatinine results
+                  instantly appear in the Hellokidney.ai App
+                </p>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-full hover:bg-[#e02129] transition-colors shadow-lg hover:shadow-xl">
+                  Order Now
+                </button>
+                <button className="px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-full border-2 border-[#0E1833] hover:bg-[#0E1833] hover:text-white transition-colors">
+                  Talk to Sales
+                </button>
+              </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_b7000787-beb3-44cf-a329-f73023b4c1bd/artifacts/nhq0ne0v_EGFR.png"
+                  alt="eGFR Creatinine Meter"
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Safety Note */}
       <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
