@@ -98,7 +98,7 @@ export const Solutions = () => {
             {/* Left Content */}
             <div className="order-2 lg:order-1">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0E1833] mb-6 leading-tight">
-                HelloKidney bridges the gap between detection and care.
+                Bridges the gap between detection and care.
               </h1>
               
               <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
@@ -125,7 +125,7 @@ export const Solutions = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/w8okgzdz_image2.avif"
                 alt="Healthcare professionals"
-                className="w-full max-w-xl lg:max-w-2xl"
+                style={{ width: '700px' }}
               />
             </div>
           </div>
