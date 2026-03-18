@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Target, Heart, Users, Globe } from 'lucide-react';
 import { CTASection } from '../components/CTASection';
 
@@ -28,15 +29,37 @@ export const About = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="py-32 pt-40 -mt-20 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            About HelloKidney.ai
+      {/* Hero Section with Background Image */}
+      <section className="relative min-h-screen flex items-center -mt-20 pt-20">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/eppj4v5h_about_banner.png')`,
+          }}
+        >
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0E1833] mb-6 leading-tight max-w-4xl mx-auto">
+            We're on a mission to unleash and uplevel the world's know-how.
           </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Empowering early detection of chronic kidney disease through accessible, evidence-based technology.
+          <p className="text-xl text-gray-600 mb-10">
+            We are a team of Nephrologists
           </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/contact">
+              <button className="w-full sm:w-auto px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-xl hover:bg-[#d91f27] transition-all duration-300 shadow-lg hover:shadow-xl">
+                Try HelloKidney
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="w-full sm:w-auto px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-xl border-2 border-gray-300 hover:border-[#0E1833] transition-all duration-300">
+                Contact Sales
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -111,18 +134,6 @@ export const About = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Impact Statement */}
-      <section className="py-20 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Building a Future Where CKD is Detected Early
-          </h2>
-          <p className="text-xl text-gray-200 leading-relaxed">
-            Every patient screened, every high-risk individual identified early, and every healthcare worker empowered with better tools brings us closer to our vision of universal access to quality kidney health screening.
-          </p>
         </div>
       </section>
 

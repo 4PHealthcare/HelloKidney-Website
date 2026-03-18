@@ -10,7 +10,7 @@ export const Header = () => {
   const location = useLocation();
 
   // Pages that have white/light backgrounds and need dark header by default
-  const lightBackgroundPages = ['/solutions'];
+  const lightBackgroundPages = ['/solutions', '/about'];
   const isLightPage = lightBackgroundPages.includes(location.pathname);
 
   useEffect(() => {
