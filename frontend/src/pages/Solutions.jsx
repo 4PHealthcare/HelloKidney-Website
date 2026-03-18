@@ -462,10 +462,10 @@ export const Solutions = () => {
               <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">For Programs & Governments</span>
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              Scale Your Health Programs
+              Scale Your <span className="text-[#FA2931]">Health Programs</span>
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-              HelloKidney.ai supports NCD/CKD strategies, national screening programs, and public health initiatives. Build scalable, evidence-based kidney health programs for your communities.
+              HelloKidney.ai supports <span className="text-white font-semibold">NCD/CKD strategies</span>, <span className="text-white font-semibold">national screening programs</span>, and <span className="text-white font-semibold">public health initiatives</span>. Build scalable, evidence-based kidney health programs for your communities.
             </p>
           </div>
         </div>
