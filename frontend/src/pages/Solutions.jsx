@@ -97,9 +97,13 @@ export const Solutions = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
             {/* Left Content */}
             <div className="order-2 lg:order-1">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0E1833] mb-8 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0E1833] mb-6 leading-tight">
                 HelloKidney bridges the gap between detection and care.
               </h1>
+              
+              <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+                Screen patients for chronic kidney disease in minutes using urine ACR and eGFR.
+              </p>
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
@@ -121,7 +125,7 @@ export const Solutions = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/w8okgzdz_image2.avif"
                 alt="Healthcare professionals"
-                className="w-full max-w-lg lg:max-w-xl rounded-2xl"
+                className="w-full max-w-xl lg:max-w-2xl"
               />
             </div>
           </div>
