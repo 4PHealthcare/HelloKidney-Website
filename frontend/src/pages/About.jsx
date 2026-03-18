@@ -116,26 +116,82 @@ export const About = () => {
         </div>
       </section>
 
-      {/* Vision & Values Section */}
+      {/* Vision & Values Section - Redesigned */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1833] mb-4">
-              Our Vision & Values
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              The principles that guide our work and drive our commitment to kidney health worldwide.
-            </p>
-          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1833] mb-12">
+            Our values
+          </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {values.map((value, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 border border-gray-100">
-                <div className="mb-4">{value.icon}</div>
-                <h3 className="text-xl font-semibold text-[#0E1833] mb-3">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{value.description}</p>
+          {/* Bento Grid Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+            {/* Card 1 - Large Light Blue/Purple Gradient */}
+            <div className="md:col-span-7 rounded-3xl p-8 min-h-[320px] flex flex-col justify-end"
+              style={{
+                background: 'linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 50%, #ddd6fe 100%)'
+              }}
+            >
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
               </div>
-            ))}
+              <h3 className="text-2xl font-bold text-[#0E1833] mb-2">Improving kidney outcomes</h3>
+              <p className="text-gray-700">
+                We believe that timely screening can prevent progression and save lives by identifying CKD before it reaches advanced stages.
+              </p>
+            </div>
+
+            {/* Card 2 - Dark Purple Gradient */}
+            <div className="md:col-span-5 rounded-3xl p-8 min-h-[320px] flex flex-col justify-end"
+              style={{
+                background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%)'
+              }}
+            >
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">Supporting healthcare workers</h3>
+              <p className="text-gray-300">
+                Our platform is designed with frontline providers in mind, making sophisticated screening accessible.
+              </p>
+            </div>
+
+            {/* Card 3 - Dark Blue Gradient */}
+            <div className="md:col-span-5 rounded-3xl p-8 min-h-[320px] flex flex-col justify-end"
+              style={{
+                background: 'linear-gradient(135deg, #0c1445 0%, #1e3a5f 50%, #0f172a 100%)'
+              }}
+            >
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">Building scalable infrastructure</h3>
+              <p className="text-gray-300">
+                We create technology that works in diverse settings, from urban hospitals to rural screening camps.
+              </p>
+            </div>
+
+            {/* Card 4 - Light Pink Gradient */}
+            <div className="md:col-span-7 rounded-3xl p-8 min-h-[320px] flex flex-col justify-end"
+              style={{
+                background: 'linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #f5d0fe 100%)'
+              }}
+            >
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-[#0E1833] mb-2">Partnering with governments</h3>
+              <p className="text-gray-700">
+                We collaborate with public health initiatives to bring kidney screening to communities that need it most.
+              </p>
+            </div>
           </div>
         </div>
       </section>
