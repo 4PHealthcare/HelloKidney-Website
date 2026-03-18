@@ -272,25 +272,6 @@ export const HowItWorks = () => {
         </div>
       </section>
 
-      {/* Safety Note */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-10 rounded-2xl shadow-sm border-l-4 border-[#FA2931]">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 text-3xl">⚕️</div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#0E1833] mb-4">
-                  Important Safety Note
-                </h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  HelloKidney.ai supports screening and clinical decision‑making. It does not replace a doctor's diagnosis or treatment. All results must be reviewed and interpreted by qualified healthcare professionals in accordance with local clinical guidelines and standards of care.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <CTASection />
     </div>
