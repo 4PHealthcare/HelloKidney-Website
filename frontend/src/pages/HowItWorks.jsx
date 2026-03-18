@@ -147,7 +147,7 @@ export const HowItWorks = () => {
             <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
               <span className="text-sm text-[#0E1833] font-medium">Urine ACR test</span>
             </span>
-            <h2 className="text-[34px] font-bold text-[#0E1833]">
+            <h2 className="text-[34px] font-bold text-[#0E1833]" style={{ lineHeight: '1.25rem' }}>
               The best time to know is early.<br />
               The best time to act is now.
             </h2>
