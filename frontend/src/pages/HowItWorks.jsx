@@ -33,6 +33,112 @@ export const HowItWorks = () => {
         </div>
       </section>
 
+      {/* How It Works Cards Section - From Home */}
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
+              <span className="text-sm text-[#0E1833] font-medium">How it Works</span>
+            </span>
+            <p className="text-[32px] font-bold text-[#0E1833] max-w-3xl mx-auto leading-tight">
+              Kidney disease risk in four simple steps from the comfort of your home.
+            </p>
+          </div>
+
+          {/* Steps Grid - Cards with background images */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+            {/* Step 1 */}
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/n5yv6qah_slide%201.png"
+                  alt="Register Patient"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[290px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">1. Register Patient</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Record basic demographics and risk profile (diabetes, hypertension, family history).
+                </p>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/nvbv9b6r_slide2.png"
+                  alt="Perform Tests"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[290px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">2. Perform Tests</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Run a urine ACR test with Hellokidney UACR strips and an eGFR test with the creatinine meter.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/xlx7woyx_slide3.png"
+                  alt="View Risk Category"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[290px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">3. View Risk Category</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Receive a colour‑coded kidney risk classification with guidance for next steps.
+                </p>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div className="group flex flex-col items-center">
+              <div 
+                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
+                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
+              >
+                {/* Background Image */}
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/iarlard2_slide4.png"
+                  alt="Track Follow-Up"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Text Below Card */}
+              <div className="mt-6 text-center max-w-[290px]">
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">4. Track Follow‑Up</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Monitor follow‑up visits, repeat testing, and patient outcomes over time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 4-Step Process */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
