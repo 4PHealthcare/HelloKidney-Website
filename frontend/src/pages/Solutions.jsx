@@ -456,15 +456,15 @@ export const Solutions = () => {
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-[100px]"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-16">
             <span className="inline-flex items-center space-x-2 bg-[#FA2931]/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#FA2931]/30">
               <span className="w-2 h-2 bg-[#FA2931] rounded-full animate-pulse"></span>
               <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">For Programs & Governments</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8">
               Scale Your <span className="text-[#FA2931]">Health Programs</span>
             </h2>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-300 leading-relaxed">
               HelloKidney.ai supports <span className="text-white font-semibold">NCD/CKD strategies</span>, <span className="text-white font-semibold">national screening programs</span>, and <span className="text-white font-semibold">public health initiatives</span>. Build scalable, evidence-based kidney health programs for your communities.
             </p>
           </div>
