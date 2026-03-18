@@ -69,8 +69,8 @@ export const Header = () => {
                 >
                   <button className={`flex items-center space-x-1 font-medium transition-colors py-2 ${
                     isDarkHeader 
-                      ? 'text-gray-700 hover:text-[#FA2931]' 
-                      : 'text-white hover:text-[#FA2931]'
+                      ? 'text-gray-700 hover:text-[#E1111B]' 
+                      : 'text-white hover:text-[#E1111B]'
                   }`}>
                     <span>{item.name}</span>
                     <ChevronDown className="h-4 w-4" />
@@ -85,7 +85,7 @@ export const Header = () => {
                             key={subItem.path}
                             to={subItem.path}
                             className={`block px-4 py-3 text-sm hover:bg-gray-50 transition-colors ${
-                              isActive(subItem.path) ? 'text-[#FA2931] font-medium' : 'text-gray-700'
+                              isActive(subItem.path) ? 'text-[#E1111B] font-medium' : 'text-gray-700'
                             }`}
                           >
                             {subItem.name}
@@ -101,8 +101,8 @@ export const Header = () => {
                   to={item.path}
                   className={`font-medium transition-colors ${
                     isDarkHeader 
-                      ? 'text-gray-700 hover:text-[#FA2931]' 
-                      : 'text-white hover:text-[#FA2931]'
+                      ? 'text-gray-700 hover:text-[#E1111B]' 
+                      : 'text-white hover:text-[#E1111B]'
                   }`}
                 >
                   {item.name}
@@ -151,8 +151,8 @@ export const Header = () => {
                           onClick={() => setIsMenuOpen(false)}
                           className={`block px-8 py-2.5 text-base transition-colors ${
                             isActive(subItem.path)
-                              ? 'text-[#FA2931] font-medium bg-red-50'
-                              : 'text-gray-600 hover:text-[#FA2931] hover:bg-gray-50'
+                              ? 'text-[#E1111B] font-medium bg-red-50'
+                              : 'text-gray-600 hover:text-[#E1111B] hover:bg-gray-50'
                           }`}
                         >
                           {subItem.name}
@@ -167,8 +167,8 @@ export const Header = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={`px-6 py-3 text-base font-medium border-b border-gray-100 last:border-b-0 transition-colors ${
                       isActive(item.path)
-                        ? 'text-[#FA2931] bg-red-50'
-                        : 'text-[#0E1833] hover:text-[#FA2931] hover:bg-gray-50'
+                        ? 'text-[#E1111B] bg-red-50'
+                        : 'text-[#0E1833] hover:text-[#E1111B] hover:bg-gray-50'
                     }`}
                   >
                     {item.name}
