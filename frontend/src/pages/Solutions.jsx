@@ -449,17 +449,22 @@ export const Solutions = () => {
         </div>
       </section>
 
-      {/* Programs & Governments Section */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Programs & Governments Section - Highlighted */}
+      <section className="py-20 bg-gradient-to-br from-[#0E1833] to-[#1a2847] relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#FA2931]/10 rounded-full blur-[150px]"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-[100px]"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
-            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
-              <span className="text-sm text-[#0E1833] font-medium">For Programs & Governments</span>
+            <span className="inline-flex items-center space-x-2 bg-[#FA2931]/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#FA2931]/30">
+              <span className="w-2 h-2 bg-[#FA2931] rounded-full animate-pulse"></span>
+              <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">For Programs & Governments</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1833] mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Scale Your Health Programs
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               HelloKidney.ai supports NCD/CKD strategies, national screening programs, and public health initiatives. Build scalable, evidence-based kidney health programs for your communities.
             </p>
           </div>
