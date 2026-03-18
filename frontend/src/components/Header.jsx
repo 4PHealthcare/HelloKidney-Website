@@ -9,6 +9,10 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
+  // Pages that have white/light backgrounds and need dark header by default
+  const lightBackgroundPages = ['/solutions'];
+  const isLightPage = lightBackgroundPages.includes(location.pathname);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -22,6 +26,9 @@ export const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Determine if header should be dark (scrolled OR on light background page)
+  const isDarkHeader = isScrolled || isLightPage;
+
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Solutions', path: '/solutions' },
@@ -34,7 +41,7 @@ export const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
+      isDarkHeader 
         ? 'bg-white shadow-md' 
         : 'bg-transparent'
     }`}>
@@ -43,12 +50,9 @@ export const Header = () => {
           {/* Logo - switches between white and colored versions */}
           <Link to="/" className="flex items-center">
             <img 
-              src={isScrolled 
-                ? "https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/bsr81dag_logo_color.png"
-                : "https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/bsr81dag_logo_color.png"
-              }
+              src="https://customer-assets.emergentagent.com/job_hellokidney-preview/artifacts/bsr81dag_logo_color.png"
               alt="HelloKidney.ai" 
-              className={`w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
+              className={`w-auto transition-all duration-300 ${!isDarkHeader ? 'brightness-0 invert' : ''}`}
               style={{ height: '1.8rem' }}
             />
           </Link>
@@ -64,7 +68,7 @@ export const Header = () => {
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <button className={`flex items-center space-x-1 font-medium transition-colors py-2 ${
-                    isScrolled 
+                    isDarkHeader 
                       ? 'text-gray-700 hover:text-[#FA2931]' 
                       : 'text-white hover:text-[#FA2931]'
                   }`}>
@@ -96,7 +100,7 @@ export const Header = () => {
                   key={item.path}
                   to={item.path}
                   className={`font-medium transition-colors ${
-                    isScrolled 
+                    isDarkHeader 
                       ? 'text-gray-700 hover:text-[#FA2931]' 
                       : 'text-white hover:text-[#FA2931]'
                   }`}
@@ -122,9 +126,9 @@ export const Header = () => {
             className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
           >
             {isMenuOpen ? (
-              <X className={`h-6 w-6 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
+              <X className={`h-6 w-6 ${isDarkHeader ? 'text-gray-700' : 'text-white'}`} />
             ) : (
-              <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
+              <Menu className={`h-6 w-6 ${isDarkHeader ? 'text-gray-700' : 'text-white'}`} />
             )}
           </button>
         </div>

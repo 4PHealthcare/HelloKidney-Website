@@ -91,15 +91,40 @@ export const Solutions = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Same style as How It Works */}
-      <section className="py-32 pt-40 -mt-20 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Solutions
-          </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Whether you're a healthcare provider or managing large-scale public health programs, HelloKidney.ai adapts to your unique requirements.
-          </p>
+      {/* Hero Section - White background with split layout */}
+      <section className="relative min-h-screen flex items-center bg-white -mt-20 pt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
+            {/* Left Content */}
+            <div className="order-2 lg:order-1">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0E1833] mb-8 leading-tight">
+                HelloKidney bridges the gap between detection and care.
+              </h1>
+              
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/contact">
+                  <button className="w-full sm:w-auto px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-xl hover:bg-[#d91f27] transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Request a Demo
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="w-full sm:w-auto px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-xl border-2 border-gray-300 hover:border-[#0E1833] transition-all duration-300">
+                    Talk to Sales
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/w8okgzdz_image2.avif"
+                alt="Healthcare professionals"
+                className="w-full max-w-lg lg:max-w-xl rounded-2xl"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
