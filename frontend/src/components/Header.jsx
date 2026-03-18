@@ -100,9 +100,11 @@ export const Header = () => {
                   key={item.path}
                   to={item.path}
                   className={`font-medium transition-colors ${
-                    isDarkHeader 
-                      ? 'text-gray-700 hover:text-[#E1111B]' 
-                      : 'text-white hover:text-[#E1111B]'
+                    isActive(item.path)
+                      ? 'text-[#E1111B]'
+                      : isDarkHeader 
+                        ? 'text-gray-700 hover:text-[#E1111B]' 
+                        : 'text-white hover:text-[#E1111B]'
                   }`}
                 >
                   {item.name}
