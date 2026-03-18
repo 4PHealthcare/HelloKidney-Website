@@ -42,12 +42,12 @@ export const HowItWorks = () => {
               <span className="text-sm text-[#0E1833] font-medium">How it Works</span>
             </span>
             <p className="text-[32px] font-bold text-[#0E1833] max-w-3xl mx-auto leading-tight">
-              Kidney disease risk in four simple steps from the comfort of your home.
+              Kidney disease risk in three simple steps from the comfort of your home.
             </p>
           </div>
 
           {/* Steps Grid - Cards with background images */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
             {/* Step 1 */}
             <div className="group flex flex-col items-center">
               <div 
@@ -92,29 +92,7 @@ export const HowItWorks = () => {
               </div>
             </div>
 
-            {/* Step 3 */}
-            <div className="group flex flex-col items-center">
-              <div 
-                className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
-                style={{ width: '290px', height: '400px', borderRadius: '14px' }}
-              >
-                {/* Background Image */}
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_17dc8ed8-144a-4a9c-b813-f73220e3b763/artifacts/xlx7woyx_slide3.png"
-                  alt="View Risk Category"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Text Below Card */}
-              <div className="mt-6 text-center max-w-[290px]">
-                <h3 className="text-xl font-bold text-[#0E1833] mb-2">3. View Risk Category</h3>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  Receive a colour‑coded kidney risk classification with guidance for next steps.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 4 */}
+            {/* Step 3 (formerly Step 4) */}
             <div className="group flex flex-col items-center">
               <div 
                 className="relative overflow-hidden hover:shadow-2xl transition-all duration-500 group-hover:scale-105"
@@ -129,7 +107,7 @@ export const HowItWorks = () => {
               </div>
               {/* Text Below Card */}
               <div className="mt-6 text-center max-w-[290px]">
-                <h3 className="text-xl font-bold text-[#0E1833] mb-2">4. Track Follow‑Up</h3>
+                <h3 className="text-xl font-bold text-[#0E1833] mb-2">3. Track Follow‑Up</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   Monitor follow‑up visits, repeat testing, and patient outcomes over time.
                 </p>
