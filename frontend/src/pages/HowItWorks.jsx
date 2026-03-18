@@ -156,8 +156,8 @@ export const HowItWorks = () => {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/c1ccldvq_hellokidney_mobile%20app.png"
-                  alt="HelloKidney Mobile App"
+                  src="https://customer-assets.emergentagent.com/job_b7000787-beb3-44cf-a329-f73023b4c1bd/artifacts/zwi7ewp2_uacr_image.png"
+                  alt="HelloKidney Urine ACR Test"
                   className="w-full max-w-[380px] rounded-3xl shadow-2xl"
                 />
               </div>
