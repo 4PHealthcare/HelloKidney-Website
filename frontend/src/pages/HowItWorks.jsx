@@ -12,9 +12,17 @@ export const HowItWorks = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="py-32 pt-40 -mt-20 bg-gradient-to-br from-[#0E1833] to-[#1a2847]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Hero Section - Full Screen with Background Image */}
+      <section className="relative h-screen flex items-center overflow-hidden -mt-20">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/bxw9gylr_68d44b93f5fd1d0320d476f0_333bae936a6cb9b2f57145ed9fd2a73a_hero%20bg.png')`,
+          }}
+        >
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             How It Works
           </h1>
