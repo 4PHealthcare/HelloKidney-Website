@@ -686,24 +686,6 @@ export const Solutions = () => {
               </div>
             </div>
           </section>
-
-          {/* Program CTA */}
-          <section className="py-16 bg-gradient-to-r from-[#0E1833] to-[#1a2847]">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold text-white mb-4">
-                Explore a Pilot for Your Program
-              </h2>
-              <p className="text-lg text-gray-300 mb-8">
-                Let's discuss how HelloKidney.ai can support your kidney health screening initiative.
-              </p>
-              <Link to="/contact">
-                <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white text-lg px-10 py-6 font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
-                  Discuss a Pilot Project
-                  <ChevronRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            </div>
-          </section>
         </div>
       )}
 
