@@ -211,9 +211,6 @@ export const HowItWorks = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
-              <span className="text-sm text-[#0E1833] font-medium">eGFR Test</span>
-            </span>
             <h2 className="text-[34px] font-bold leading-tight">
               <span className="text-[#FA2931]">eGFR</span> <span className="text-[#0E1833]">Creatinine Meter</span>
             </h2>
