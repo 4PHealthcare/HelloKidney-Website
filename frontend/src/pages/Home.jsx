@@ -293,7 +293,7 @@ export const Home = () => {
               <span className="w-2 h-2 bg-[#FA2931] rounded-full animate-pulse"></span>
               <span className="text-sm text-[#FA2931] font-semibold uppercase tracking-wider">Our Solution</span>
             </span>
-            <h2 className="text-[32px] font-bold text-[#0E1833] leading-tight max-w-4xl mx-auto">
+            <h2 className="text-[2.5rem] font-bold text-[#0E1833] leading-tight max-w-4xl mx-auto">
               HelloKidney bridges the<br /> gap between <span className="text-[#FA2931]">detection</span> and <span className="text-[#FA2931]">care</span>.
             </h2>
           </div>
@@ -393,7 +393,7 @@ export const Home = () => {
             <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
               <span className="text-sm text-[#0E1833] font-medium">How it Works</span>
             </span>
-            <p className="text-[32px] font-bold text-[#0E1833] max-w-3xl mx-auto leading-tight">
+            <p className="text-[2.5rem] font-bold text-[#0E1833] max-w-3xl mx-auto leading-tight">
               Kidney disease risk in four simple steps from the comfort of your home.
             </p>
           </div>
@@ -667,7 +667,7 @@ export const Home = () => {
             <span className="inline-flex items-center space-x-2 bg-[#0E1833]/5 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-[#0E1833]/10">
               <span className="text-sm text-[#0E1833] font-medium">Customer Reviews</span>
             </span>
-            <h2 className="text-[32px] font-bold text-[#0E1833] mb-6">
+            <h2 className="text-[2.5rem] font-bold text-[#0E1833] mb-6">
               What Healthcare Professionals Say
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
