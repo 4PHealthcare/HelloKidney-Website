@@ -534,43 +534,6 @@ export const Solutions = () => {
         </div>
       </section>
 
-      {/* Data-Driven Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-[#0E1833] to-[#1a2847] p-10 rounded-3xl">
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-2xl bg-[#FA2931] flex items-center justify-center">
-                  <TrendingUp className="h-8 w-8 text-white" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  Data-Driven Program Management
-                </h3>
-                <p className="text-gray-300 leading-relaxed mb-6">
-                  HelloKidney.ai provides real-time visibility into screening coverage, risk identification, and follow-up compliance across your entire program. Use evidence-based insights to optimize resource allocation, identify high-burden areas, and demonstrate program impact to stakeholders.
-                </p>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-[#FA2931] rounded-full mr-3"></div>
-                    Real-time program performance dashboards
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-[#FA2931] rounded-full mr-3"></div>
-                    Geographic and demographic analysis tools
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-[#FA2931] rounded-full mr-3"></div>
-                    Customizable reports for stakeholders and funders
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <CTASection />
     </div>
