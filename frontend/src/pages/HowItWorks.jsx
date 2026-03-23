@@ -19,15 +19,15 @@ export const HowItWorks = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/bxw9gylr_68d44b93f5fd1d0320d476f0_333bae936a6cb9b2f57145ed9fd2a73a_hero%20bg.png')`,
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_25f4e8fb-a300-4335-9732-e97354468626/artifacts/eppj4v5h_about_banner.png')`,
           }}
         >
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ paddingTop: '0.1rem' }}>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-[#0E1833] mb-6">
             How It Works
           </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             A simple, four-step workflow for comprehensive kidney health screening and monitoring.
           </p>
         </div>
