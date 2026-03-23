@@ -30,7 +30,7 @@ export const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-screen flex items-center -mt-20">
+      <section className="relative h-[60vh] flex items-center -mt-20">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
