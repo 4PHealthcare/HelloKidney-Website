@@ -152,31 +152,138 @@ export const About = () => {
         </div>
       </section>
 
-      {/* Organization Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Organization Section - Redesigned */}
+      <section className="py-24 bg-gradient-to-br from-[#0E1833] to-[#1a2847] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1833] mb-6">
-                The Organisation
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                HelloKidney.ai is developed by a dedicated health-tech team based in Hyderabad, India. We work closely with healthcare partners across India, Kenya, and other low- and middle-income countries (LMICs) where the burden of chronic kidney disease is growing rapidly.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Our team combines expertise in digital health, clinical medicine, public health, and software engineering to create solutions that are both clinically sound and practically deployable in resource-constrained settings.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                We believe that technology should serve healthcare workers and patients, not the other way around. Every feature we build is tested in real-world clinical environments to ensure it meets the needs of frontline providers.
-              </p>
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <span className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+              <span className="text-sm text-white font-medium">About Us</span>
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+              The Organisation
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              A dedicated health-tech team on a mission to transform kidney care globally
+            </p>
+          </div>
+
+          {/* Stats Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+            <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="text-4xl font-bold text-[#FA2931] mb-2">10+</div>
+              <div className="text-gray-300 text-sm">Countries Served</div>
             </div>
-            <div 
-              className="rounded-2xl shadow-2xl h-96 bg-cover bg-center"
-              style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1656009178152-1e4402050560')`,
-              }}
-            >
-              <div className="h-full w-full bg-gradient-to-t from-[#0E1833]/40 to-transparent rounded-2xl"></div>
+            <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="text-4xl font-bold text-[#FA2931] mb-2">50K+</div>
+              <div className="text-gray-300 text-sm">Patients Screened</div>
+            </div>
+            <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="text-4xl font-bold text-[#FA2931] mb-2">500+</div>
+              <div className="text-gray-300 text-sm">Healthcare Partners</div>
+            </div>
+            <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
+              <div className="text-4xl font-bold text-[#FA2931] mb-2">35%</div>
+              <div className="text-gray-300 text-sm">Earlier Detection</div>
+            </div>
+          </div>
+
+          {/* Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Content */}
+            <div className="space-y-8">
+              {/* Feature 1 */}
+              <div className="flex gap-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#FA2931] flex items-center justify-center">
+                  <Globe className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Global Impact</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Based in Hyderabad, India, we work closely with healthcare partners across India, Kenya, and other LMICs where kidney disease burden is growing rapidly.
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="flex gap-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#3B82F6] flex items-center justify-center">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Expert Team</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Our team combines expertise in digital health, clinical medicine, public health, and software engineering to create clinically sound solutions.
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="flex gap-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#10B981] flex items-center justify-center">
+                  <Heart className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white mb-2">Patient-Centered</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    We believe technology should serve healthcare workers and patients. Every feature is tested in real-world clinical environments.
+                  </p>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <div className="pt-4">
+                <Link to="/contact">
+                  <button className="px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-full hover:bg-[#d91f27] transition-all duration-300 shadow-lg shadow-[#FA2931]/30 hover:shadow-xl">
+                    Partner With Us
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right - Image Grid */}
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div 
+                    className="rounded-2xl h-48 bg-cover bg-center shadow-xl"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400')`,
+                    }}
+                  ></div>
+                  <div 
+                    className="rounded-2xl h-64 bg-cover bg-center shadow-xl"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=400')`,
+                    }}
+                  ></div>
+                </div>
+                <div className="space-y-4 pt-8">
+                  <div 
+                    className="rounded-2xl h-64 bg-cover bg-center shadow-xl"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400')`,
+                    }}
+                  ></div>
+                  <div 
+                    className="rounded-2xl h-48 bg-cover bg-center shadow-xl"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=400')`,
+                    }}
+                  ></div>
+                </div>
+              </div>
+              
+              {/* Floating Badge */}
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-6 py-4 shadow-2xl flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-[#FA2931]/10 flex items-center justify-center">
+                  <Target className="w-6 h-6 text-[#FA2931]" />
+                </div>
+                <div>
+                  <div className="text-sm text-gray-500">Our Mission</div>
+                  <div className="font-bold text-[#0E1833]">Early CKD Detection</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
