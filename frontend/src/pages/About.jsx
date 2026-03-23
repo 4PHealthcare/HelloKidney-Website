@@ -66,22 +66,60 @@ export const About = () => {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1833] mb-6">
-              Our Mission
+      {/* Our Core Values Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-serif italic text-[#0E1833] mb-4">
+              Our Core Values
             </h2>
+            <p className="text-lg text-gray-600">
+              The principles that guide every decision we make at HelloKidney.
+            </p>
           </div>
-          
-          <div className="bg-gray-50 p-10 rounded-2xl border border-gray-200">
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              HelloKidney.ai was created to enable early chronic kidney disease detection in high-risk populations using accessible technology. We combine smartphone-based urine ACR testing with eGFR calculations to bring systematic kidney screening closer to patients who need it.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Chronic kidney disease affects millions globally, yet often goes undetected until advanced stages. By making screening more accessible and actionable, we aim to change the trajectory of kidney health in communities worldwide.
-            </p>
+
+          {/* Values Cards Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Card 1 - Light Blue */}
+            <div className="bg-[#E8F4FC] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
+              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                Patient First
+              </h3>
+              <p className="text-gray-600 text-center text-sm leading-relaxed">
+                Every decision begins with one question: does this serve the patient better?
+              </p>
+            </div>
+
+            {/* Card 2 - Light Peach */}
+            <div className="bg-[#FEF3E2] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
+              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                Remain Curious
+              </h3>
+              <p className="text-gray-600 text-center text-sm leading-relaxed">
+                Stay on the lookout for better ways to serve our partners and their patients.
+              </p>
+            </div>
+
+            {/* Card 3 - Light Mint */}
+            <div className="bg-[#E8F5F0] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
+              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                Collaboration
+              </h3>
+              <p className="text-gray-600 text-center text-sm leading-relaxed">
+                It takes a great team. We trust each other and work together toward shared goals.
+              </p>
+            </div>
+
+            {/* Card 4 - Light Pink */}
+            <div className="bg-[#F9F0F9] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
+              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                Ownership
+              </h3>
+              <p className="text-gray-600 text-center text-sm leading-relaxed">
+                Take responsibility, be accountable, and deliver on every promise we make.
+              </p>
+            </div>
           </div>
         </div>
       </section>
