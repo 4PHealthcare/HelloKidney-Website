@@ -91,7 +91,7 @@ export const Solutions = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section - White background with split layout */}
-      <section className="relative min-h-screen flex items-center bg-white -mt-20 pt-20">
+      <section className="relative min-h-screen flex items-center bg-white -mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
             {/* Left Content */}
