@@ -39,10 +39,10 @@ export const About = () => {
           }}
         >
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 pt-32">
           <h1 
             className="font-bold text-[#0E1833] mb-6 leading-tight max-w-4xl mx-auto"
-            style={{ fontSize: '60px', letterSpacing: '-1.5px' }}
+            style={{ fontSize: '3rem', letterSpacing: '-1.5px' }}
           >
             We're on a mission to unleash and uplevel the world's know-how.
           </h1>
