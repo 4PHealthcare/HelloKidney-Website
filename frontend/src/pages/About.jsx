@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Target, Heart, Users, Globe } from 'lucide-react';
+import { Target, Heart, Users, Globe, Lightbulb, Handshake, Shield } from 'lucide-react';
 import { CTASection } from '../components/CTASection';
 
 export const About = () => {
@@ -82,43 +82,71 @@ export const About = () => {
           {/* Values Cards Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 - Light Blue */}
-            <div className="bg-[#E8F4FC] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
-              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
-                Patient First
-              </h3>
-              <p className="text-gray-600 text-center text-sm leading-relaxed">
-                Every decision begins with one question: does this serve the patient better?
-              </p>
+            <div className="bg-[#E8F4FC] rounded-2xl p-8 min-h-[380px] flex flex-col transition-transform hover:scale-105 duration-300">
+              <div className="flex-1 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-[#3B82F6]/20 flex items-center justify-center">
+                  <Heart className="w-8 h-8 text-[#3B82F6]" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                  Patient First
+                </h3>
+                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                  Every decision begins with one question: does this serve the patient better?
+                </p>
+              </div>
             </div>
 
             {/* Card 2 - Light Peach */}
-            <div className="bg-[#FEF3E2] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
-              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
-                Remain Curious
-              </h3>
-              <p className="text-gray-600 text-center text-sm leading-relaxed">
-                Stay on the lookout for better ways to serve our partners and their patients.
-              </p>
+            <div className="bg-[#FEF3E2] rounded-2xl p-8 min-h-[380px] flex flex-col transition-transform hover:scale-105 duration-300">
+              <div className="flex-1 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-[#F59E0B]/20 flex items-center justify-center">
+                  <Lightbulb className="w-8 h-8 text-[#F59E0B]" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                  Remain Curious
+                </h3>
+                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                  Stay on the lookout for better ways to serve our partners and their patients.
+                </p>
+              </div>
             </div>
 
             {/* Card 3 - Light Mint */}
-            <div className="bg-[#E8F5F0] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
-              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
-                Collaboration
-              </h3>
-              <p className="text-gray-600 text-center text-sm leading-relaxed">
-                It takes a great team. We trust each other and work together toward shared goals.
-              </p>
+            <div className="bg-[#E8F5F0] rounded-2xl p-8 min-h-[380px] flex flex-col transition-transform hover:scale-105 duration-300">
+              <div className="flex-1 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-[#10B981]/20 flex items-center justify-center">
+                  <Users className="w-8 h-8 text-[#10B981]" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                  Collaboration
+                </h3>
+                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                  It takes a great team. We trust each other and work together toward shared goals.
+                </p>
+              </div>
             </div>
 
             {/* Card 4 - Light Pink */}
-            <div className="bg-[#F9F0F9] rounded-2xl p-8 min-h-[380px] flex flex-col justify-end transition-transform hover:scale-105 duration-300">
-              <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
-                Ownership
-              </h3>
-              <p className="text-gray-600 text-center text-sm leading-relaxed">
-                Take responsibility, be accountable, and deliver on every promise we make.
-              </p>
+            <div className="bg-[#F9F0F9] rounded-2xl p-8 min-h-[380px] flex flex-col transition-transform hover:scale-105 duration-300">
+              <div className="flex-1 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-[#A855F7]/20 flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-[#A855F7]" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-[#0E1833] mb-3 text-center">
+                  Ownership
+                </h3>
+                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                  Take responsibility, be accountable, and deliver on every promise we make.
+                </p>
+              </div>
             </div>
           </div>
         </div>
