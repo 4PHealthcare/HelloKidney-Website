@@ -520,14 +520,22 @@ export const Solutions = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FA2931]/20 to-[#0E1833]/20 rounded-3xl blur-2xl"></div>
-              <div 
-                className="relative rounded-2xl shadow-2xl overflow-hidden h-96 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800')`,
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0E1833]/60 to-transparent"></div>
+              <div className="absolute -inset-4 bg-gradient-to-br from-[#FA2931]/20 to-[#0E1833]/30 rounded-3xl blur-2xl"></div>
+              <div className="relative rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_b7000787-beb3-44cf-a329-f73023b4c1bd/artifacts/d6ldtmrh_hellokidney_dashboard.png"
+                  alt="HelloKidney Analytics Dashboard"
+                  className="w-full h-auto"
+                />
+              </div>
+              {/* Floating stats badges */}
+              <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg px-4 py-2 border border-gray-100">
+                <div className="text-xs text-gray-500">Live Data</div>
+                <div className="text-lg font-bold text-[#0E1833]">2,070+</div>
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-[#FA2931] rounded-xl shadow-lg px-4 py-2">
+                <div className="text-xs text-white/80">Screened</div>
+                <div className="text-lg font-bold text-white">Real-time</div>
               </div>
             </div>
           </div>
