@@ -14,7 +14,7 @@ export const HowItWorks = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Full Screen with Background Image */}
-      <section className="relative h-screen flex items-center overflow-hidden -mt-20">
+      <section className="relative h-[60vh] flex items-center overflow-hidden -mt-20">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
