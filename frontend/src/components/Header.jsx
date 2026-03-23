@@ -116,7 +116,7 @@ export const Header = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden lg:flex items-center">
             <Link to="/contact">
-              <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold px-6 rounded-lg shadow-sm">
+              <Button className="bg-[#FA2931] hover:bg-[#d91f27] text-white font-semibold px-6 rounded-full shadow-sm">
                 Request a Demo
               </Button>
             </Link>

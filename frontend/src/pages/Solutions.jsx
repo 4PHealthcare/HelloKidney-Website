@@ -107,12 +107,12 @@ export const Solutions = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
-                  <button className="w-full sm:w-auto px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-xl hover:bg-[#d91f27] transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <button className="w-full sm:w-auto px-8 py-4 bg-[#FA2931] text-white font-semibold rounded-full hover:bg-[#d91f27] transition-all duration-300 shadow-lg hover:shadow-xl">
                     Request a Demo
                   </button>
                 </Link>
                 <Link to="/contact">
-                  <button className="w-full sm:w-auto px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-xl border-2 border-gray-300 hover:border-[#0E1833] transition-all duration-300">
+                  <button className="w-full sm:w-auto px-8 py-4 bg-white text-[#0E1833] font-semibold rounded-full border-2 border-gray-300 hover:border-[#0E1833] transition-all duration-300">
                     Talk to Sales
                   </button>
                 </Link>
