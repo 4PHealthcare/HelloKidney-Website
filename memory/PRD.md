@@ -1,7 +1,7 @@
 # HelloKidney.ai - Product Requirements Document
 
 **Date Created:** March 5, 2026  
-**Last Updated:** March 7, 2026
+**Last Updated:** April 13, 2026
 
 ---
 
@@ -116,6 +116,35 @@ Build a modern, responsive multi-page marketing website for HelloKidney.ai - an 
 1. ✅ **Header Scroll Behavior** (P0 Recurring Issue) - Fixed transparent header with white text at top, white background with dark text on scroll
 2. ✅ **Hero Section Extension** - All pages now have hero sections extending behind header for proper transparent effect
 3. ✅ **Contact Form Backend** - Implemented real API endpoint replacing mock submission
+
+## Completed Tasks (April 13, 2026)
+
+### Static Site Export:
+1. ✅ **Static HTML/CSS/JS Export** - Converted the React app to standalone static HTML, CSS, and vanilla JS
+2. ✅ **Local Assets** - Downloaded all external images (Unsplash, custom assets) to `/app/static-site/assets/`
+3. ✅ **"The Problem" Section Design** - Fixed to match exact reference design with:
+   - Pink/red "THE PROBLEM" badge at top center
+   - Card 1: Large "90%" red statistic with supporting text
+   - Card 2: Warning triangle icon + "patients fall through the cracks" + gray pills
+   - Card 3: Red gradient card with lightning icon + "Detection without action saves no one"
+4. ✅ **Static Site Package** - Created `/app/static-site.zip` for download
+
+### Static Site Structure:
+```
+/app/static-site/
+├── index.html          (Home page)
+├── solutions.html      (Solutions page)
+├── how-it-works.html   (How It Works page)
+├── about.html          (About page)
+├── contact.html        (Contact page)
+├── css/
+│   └── styles.css      (All styles)
+├── js/
+│   └── main.js         (Mobile menu, scroll behavior)
+└── assets/             (Local images)
+```
+
+---
 
 ## Completed Tasks (March 12, 2026)
 
