@@ -5,6 +5,48 @@
 
 ---
 
+## Latest Update (April 14, 2026) - Legal Pages Added
+
+### New Legal Pages Created:
+Created 3 new legal policy pages for the static site with content from the reference URLs:
+
+1. **Privacy Policy** (`/app/static-site/privacy-policy.html`)
+   - Source: https://hellokidney.ai/privacy-policy.php
+   - Content: Information Technology Act compliance, personal information definitions, data collection practices, sharing policies, security measures, third-party integration terms, consent policies
+   - Clean layout with hero section, numbered sections, and styled callout boxes
+
+2. **Terms & Conditions** (`/app/static-site/terms-and-conditions.html`)
+   - Source: https://hellokidney.ai/terms-and-conditions.php  
+   - Content: Terms of use, supply of materials, changes policy, project delays, approval of work, intellectual property rights, licensing, subcontracting, non-disclosure, governing law (Telangana)
+   - Red accent left-border cards for key terms, dark footer box for governing law
+
+3. **Cancellation & Refund Policy** (`/app/static-site/cancellation-refund-policy.html`)
+   - Source: https://hellokidney.ai/cancellation-refund-policy.php
+   - Content: Definitions (Company, Goods, Orders, Service, Website, You), 24-hour cancellation window, 14-day refund timeline, contact information
+   - Color-coded definition cards, dark cancellation policy box, green refund policy box, contact CTA buttons
+
+### Footer Updates:
+Updated the Legal section in footer across ALL static pages (8 files total):
+- `index.html` ✅
+- `solutions.html` ✅
+- `how-it-works.html` ✅
+- `about.html` ✅
+- `contact.html` ✅
+- `privacy-policy.html` ✅
+- `terms-and-conditions.html` ✅
+- `cancellation-refund-policy.html` ✅
+
+New Legal links:
+- Terms & Conditions → `terms-and-conditions.html`
+- Privacy Policy → `privacy-policy.html`
+- Cancellation & Refund → `cancellation-refund-policy.html`
+- Compliance → `#` (placeholder)
+
+### Static Site Package Updated:
+- `/app/static-site.zip` (5.5MB) - Updated with all 8 HTML pages
+
+---
+
 ## Original Problem Statement
 
 Build a modern, responsive multi-page marketing website for HelloKidney.ai - an early chronic kidney disease (CKD) screening platform using urine ACR and eGFR.
