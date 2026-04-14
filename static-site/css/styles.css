@@ -1019,6 +1019,29 @@ button {
   padding: 4rem 0 2rem;
 }
 
+.footer-link {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #FA2931;
+}
+
+.footer-email:hover {
+  color: #FA2931;
+}
+
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.social-icon:hover svg {
+  fill: white;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
