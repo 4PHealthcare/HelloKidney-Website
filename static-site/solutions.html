@@ -82,52 +82,127 @@
   </section>
 
   <!-- Key Features Section -->
-  <section class="section" style="background: #f8fafc;">
+  <section style="padding: 5rem 0; background: #f8fafc;">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Key Features</h2>
-        <p class="section-subtitle">Everything you need for comprehensive CKD screening at the point of care</p>
+      <!-- Section Header -->
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(250, 41, 49, 0.1); padding: 0.5rem 1.5rem; border-radius: 9999px; border: 1px solid rgba(250, 41, 49, 0.2); margin-bottom: 1.5rem;">
+          <span style="width: 8px; height: 8px; background: #FA2931; border-radius: 50%;"></span>
+          <span style="font-size: 0.875rem; color: #FA2931; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Key Features</span>
+        </span>
+        <h2 style="font-size: 2.5rem; font-weight: 700; color: #0E1833; margin-bottom: 1rem;">Everything You Need for Kidney Care</h2>
       </div>
       
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon" style="background: rgba(250, 41, 49, 0.1);">
-            <svg fill="none" stroke="#FA2931" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+      <!-- Top Row - 3 Cards -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 1.5rem;">
+        <!-- Card 1 - Fast Detection -->
+        <div style="background: white; border-radius: 1rem; padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="width: 3.5rem; height: 3.5rem; background: rgba(250, 41, 49, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <svg style="width: 1.5rem; height: 1.5rem; color: #FA2931;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
             </svg>
           </div>
-          <h3 class="feature-title">Simple Registration</h3>
-          <p class="feature-desc">Quick patient intake with risk factor assessment</p>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #0E1833; margin-bottom: 1rem;">Fast Detection</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">60-second smartphone-based urine ACR testing</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Point-of-care creatinine with automated eGFR calculations</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Instant color-coded CKD risk assessments</span>
+            </li>
+          </ul>
         </div>
         
-        <div class="feature-card">
-          <div class="feature-icon" style="background: rgba(59, 130, 246, 0.1);">
-            <svg fill="none" stroke="#3B82F6" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+        <!-- Card 2 - Smart Treatment Guidance -->
+        <div style="background: white; border-radius: 1rem; padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="width: 3.5rem; height: 3.5rem; background: rgba(250, 41, 49, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <svg style="width: 1.5rem; height: 1.5rem; color: #FA2931;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
             </svg>
           </div>
-          <h3 class="feature-title">Dual Testing</h3>
-          <p class="feature-desc">Integrated urine ACR and eGFR measurement</p>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #0E1833; margin-bottom: 1rem;">Smart Treatment Guidance</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Built-in clinical decision tool delivers KDIGO guideline-directed treatment recommendations</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Personalized care plans based on CKD stage, comorbidities, and risk factors</span>
+            </li>
+          </ul>
         </div>
         
-        <div class="feature-card">
-          <div class="feature-icon" style="background: rgba(16, 185, 129, 0.1);">
-            <svg fill="none" stroke="#10B981" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        <!-- Card 3 - Clear Communication -->
+        <div style="background: white; border-radius: 1rem; padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="width: 3.5rem; height: 3.5rem; background: rgba(250, 41, 49, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <svg style="width: 1.5rem; height: 1.5rem; color: #FA2931;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
             </svg>
           </div>
-          <h3 class="feature-title">Risk Classification</h3>
-          <p class="feature-desc">Color-coded CKD risk categories with guidance</p>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #0E1833; margin-bottom: 1rem;">Clear Communication</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Simple summaries for patients</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Evidence-based protocols for clinicians</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Everyone knows what to do next</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Bottom Row - 2 Cards -->
+      <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 1.5rem;">
+        <!-- Card 4 - Complete Patient Tracking -->
+        <div style="background: white; border-radius: 1rem; padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="width: 3.5rem; height: 3.5rem; background: rgba(250, 41, 49, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <svg style="width: 1.5rem; height: 1.5rem; color: #FA2931;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #0E1833; margin-bottom: 1rem;">Complete Patient Tracking</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Patient lists & visit history</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Treatment adherence & follow-up reminders</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <svg style="width: 1.25rem; height: 1.25rem; color: #FA2931; flex-shrink: 0; margin-top: 2px;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span style="color: #374151; font-size: 0.9375rem; line-height: 1.5;">Long-term kidney health monitoring</span>
+            </li>
+          </ul>
         </div>
         
-        <div class="feature-card">
-          <div class="feature-icon" style="background: rgba(168, 85, 247, 0.1);">
-            <svg fill="none" stroke="#A855F7" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        <!-- Card 5 - Built to Scale (Dark Card) -->
+        <div style="background: #0E1833; border-radius: 1rem; padding: 2rem; display: flex; align-items: center; gap: 2rem;">
+          <div style="width: 4rem; height: 4rem; background: rgba(250, 41, 49, 0.2); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg style="width: 2rem; height: 2rem; color: #FA2931;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
-          <h3 class="feature-title">Follow-up Tracking</h3>
-          <p class="feature-desc">Automated reminders and outcome monitoring</p>
+          <div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 0.75rem;">Built to Scale</h3>
+            <p style="color: rgba(255, 255, 255, 0.8); font-size: 1rem; line-height: 1.6;">
+              Designed for regions where diabetes and hypertension along with CKDu are driving silent kidney epidemics. Deploy across clinics, hospitals, and community health programs with ease.
+            </p>
+          </div>
         </div>
       </div>
     </div>
