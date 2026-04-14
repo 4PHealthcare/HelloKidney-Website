@@ -1013,6 +1013,11 @@ button {
   font-size: 1rem;
 }
 
+/* ===== CTA Section ===== */
+.cta-ghost-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* ===== Footer ===== */
 .footer {
   background: var(--primary-dark);
