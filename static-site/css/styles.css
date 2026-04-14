@@ -1275,6 +1275,26 @@ button {
   transform: scale(1.1);
 }
 
+/* Value Bento Card Hover */
+.value-bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive for Values Grid */
+@media (max-width: 1024px) {
+  .value-bento-card {
+    min-height: 16rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .value-bento-card {
+    min-height: auto !important;
+    padding: 1.5rem !important;
+  }
+}
+
 /* Pulse animation for badge dot */
 @keyframes pulse {
   0%, 100% {
