@@ -117,6 +117,14 @@ Build a modern, responsive multi-page marketing website for HelloKidney.ai - an 
 2. ✅ **Hero Section Extension** - All pages now have hero sections extending behind header for proper transparent effect
 3. ✅ **Contact Form Backend** - Implemented real API endpoint replacing mock submission
 
+### Header/Menu Section Updated (April 14, 2026):
+1. ✅ **Logo** - Updated to use image logo (`assets/logo.png`)
+2. ✅ **Active Nav Link** - "Home" now highlighted in RED (#E1111B) when on home page
+3. ✅ **Scroll Behavior** - Header turns white with shadow on scroll, colored logo appears
+4. ✅ **JS Path Detection** - Fixed setActiveNavLink() to work with relative paths
+
+---
+
 ## Completed Tasks (April 14, 2026)
 
 ### Static Site Section Updates - React App Design Match:

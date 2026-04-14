@@ -104,7 +104,13 @@ function setActiveNavLink() {
   
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '/' && href === '/index.html')) {
+    // Handle both relative (index.html) and absolute (/index.html) paths
+    const isHome = currentPath === '/' || currentPath === '/index.html' || currentPath.endsWith('/index.html');
+    const isMatchingPath = href === currentPath || 
+                          currentPath.endsWith('/' + href) || 
+                          (isHome && (href === 'index.html' || href === '/index.html' || href === '/'));
+    
+    if (isMatchingPath) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
