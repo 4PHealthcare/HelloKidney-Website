@@ -1264,3 +1264,45 @@ button {
 .healthcare-card:hover img {
   transform: scale(1.1);
 }
+
+/* Program Feature Card Hover */
+.program-feature-card:hover {
+  border-color: rgba(250, 41, 49, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.program-feature-card:hover > div:first-child {
+  transform: scale(1.1);
+}
+
+/* Pulse animation for badge dot */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Responsive for Who Can Benefit Section */
+@media (max-width: 1024px) {
+  .who-can-benefit-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .who-can-benefit-cards {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  
+  .who-can-benefit-bottom {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-can-benefit-cards,
+  .who-can-benefit-bottom {
+    grid-template-columns: 1fr !important;
+  }
+}
