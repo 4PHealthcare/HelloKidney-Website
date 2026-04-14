@@ -174,11 +174,13 @@ button {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  position: relative;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-img {
@@ -186,20 +188,24 @@ button {
   filter: brightness(0) invert(1); /* White logo on dark background (default for home page) */
 }
 
-.header.scrolled .logo-img {
-  filter: none; /* Colored logo on white background when scrolled */
+.header.scrolled .logo-img,
+.header.light .logo-img {
+  filter: none; /* Colored logo on white/light background when scrolled or on light pages */
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  margin-left: auto;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link {
@@ -208,12 +214,15 @@ button {
   color: white;
 }
 
-.header.scrolled .nav-link {
+.header.scrolled .nav-link,
+.header.light .nav-link {
   color: #374151;
 }
 
 .header.scrolled .nav-link.active,
-.header.scrolled .nav-link:hover {
+.header.scrolled .nav-link:hover,
+.header.light .nav-link.active,
+.header.light .nav-link:hover {
   color: #E1111B;
 }
 
@@ -228,6 +237,7 @@ button {
 .nav-btn {
   padding: 0.75rem 1.5rem;
   font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .mobile-menu-btn {
@@ -237,7 +247,8 @@ button {
   color: white;
 }
 
-.header.scrolled .mobile-menu-btn {
+.header.scrolled .mobile-menu-btn,
+.header.light .mobile-menu-btn {
   color: #374151;
 }
 
